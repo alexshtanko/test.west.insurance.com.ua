@@ -1,0 +1,59 @@
+.vc_edit-form-tab .vc_shortcode-param.vc_column.no-top-padding{
+	padding-top: 0;
+}
+.vc_edit-form-tab .vc_shortcode-param.vc_column.no-top-margin{
+	margin-top: 0;
+}
+.wpb_el_type_seofy_param_heading.vc_shortcode-param.vc_column{
+    font-size: 1.5em;
+    color: #bbb;
+    margin-top: 30px;
+}
+.wpb_el_type_seofy_param_heading h4 {
+	padding: 0 0 5px 0;
+	margin: 0;
+	border-bottom: 1px dashed #dbdbdb;
+}
+.wgl_checkbox_wrapper input{
+	display: none !important;
+}
+
+.wgl_checkbox_label {
+	margin: 4px 0;
+	width: 50px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid #EBEBEB;
+    float: left;
+    background-color: #EBEBEB;
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 4px;
+}
+.wgl_checkbox_label .button-animation{
+	transition: .3s ease;
+    content: '';
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background: white;
+    left: 1px;
+    top: 1px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+.wgl_checkbox_label.checked {
+	background: #52d298;
+	border-color: #52d298;	
+}
+
+.wgl_checkbox_label.checked .button-animation {
+	left: 23px;
+}
+.wpb_el_type_param_group .vc_param_group-list .vc_param.wpb_vc_row {
+    background: #f9f9f9;
+    padding: 7px;
+    margin-bottom: 5px;
+}

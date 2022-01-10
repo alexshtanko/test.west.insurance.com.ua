@@ -1,0 +1,1 @@
+21:30:08 Fatal Error: Cannot redeclare add_on_order_info_js() (previously declared in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:21) in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:57

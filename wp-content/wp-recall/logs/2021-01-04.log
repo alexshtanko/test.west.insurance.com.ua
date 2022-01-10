@@ -1,0 +1,25 @@
+14:00:41 Fatal Error: Uncaught Error: Call to a member function get_all_referels() on null in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/class/insurance.php:263
+Stack trace:
+#0 /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php(160): Insurance_Class->export_excell()
+#1 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(286): add_on_get_excell_order('')
+#2 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /var/www/epolicy/data/www/epolicy.com.ua/wp-admin/admin-ajax.php(99): do_action('wp_ajax_get_exc...')
+#5 {main}
+  thrown in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/class/insurance.php:263
+20:07:59 Fatal Error: Uncaught Error: Call to a member function get_orders() on null in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:100
+Stack trace:
+#0 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(286): add_on_order_filter('')
+#1 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/epolicy/data/www/epolicy.com.ua/wp-admin/admin-ajax.php(99): do_action('wp_ajax_order_f...')
+#4 {main}
+  thrown in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:100
+20:09:40 Fatal Error: Uncaught Error: Call to a member function get_orders() on null in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:100
+Stack trace:
+#0 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(286): add_on_order_filter('')
+#1 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/epolicy/data/www/epolicy.com.ua/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/epolicy/data/www/epolicy.com.ua/wp-admin/admin-ajax.php(99): do_action('wp_ajax_order_f...')
+#4 {main}
+  thrown in /var/www/epolicy/data/www/epolicy.com.ua/wp-content/wp-recall/add-on/insurance/index.php:100

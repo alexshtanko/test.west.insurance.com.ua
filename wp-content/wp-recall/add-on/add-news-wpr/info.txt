@@ -1,0 +1,7 @@
+Name: Add News WP-Recall (Объявление в личном кабинете);
+Version: 2.8;
+Support Core: 14.0.0;
+Description: Данное дополнение позволяет добавлять объявление от Администратора в личный кабинет всех пользователей;
+Author: Web-Blog;
+Author URI: https://codeseller.ru/author/ulogin_vkontakte_220251751/;
+Add-on URI: http://codeseller.ru/products/add-news-wp-recall-dopolnenie-pozvolyayushhee-razmeshhat-obyavleniya-ot-administratora-v-kabinetax-polzovatelej/;

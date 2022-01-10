@@ -1,0 +1,7 @@
+Name: Covid;
+Version: 1.0;
+Description: Covid страхування, таб "Заявки менеджера";
+Support Core: 10.0.0;
+Author: Александр Штанько;
+Author Uri: https://www.shtanko.com.ua;
+Add-on Uri: https://www.shtanko.com.ua;

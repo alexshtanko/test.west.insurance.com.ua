@@ -1,0 +1,633 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2017-08-28 12:16+0300\n"
+"PO-Revision-Date: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: uk_UA\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Partner_Class.php:89
+msgid "Accrual of funds for the affiliate program"
+msgstr "Нарахування коштів на партнерську програму"
+
+#: Partner_Class.php:112
+msgid "You have a new referral!"
+msgstr "У вас новий реферал!"
+
+#: Partner_Class.php:115
+#, php-format
+msgid "Congratulations! On the website \"%s\" you have a new referral"
+msgstr "Вітаємо! На веб-сайті \"%s\" у вас є новий реферал"
+
+#: Partner_Class.php:116
+msgid "Information about referrals"
+msgstr "Інформація про рефералів"
+
+#: Partner_Class.php:117
+msgid "Name"
+msgstr "Ім'я"
+
+#: Partner_Class.php:118
+msgid "Email Реферала"
+msgstr "Email Реферала"
+
+#: Partner_Class.php:282 admin-pages.php:134 admin-pages.php:320 index.php:142
+#: index.php:263
+msgid "Level"
+msgstr "Рівень"
+
+#: admin-pages.php:11 admin-pages.php:26
+msgid "Settings"
+msgstr "Налаштування"
+
+#: admin-pages.php:12
+msgid "Partners and Referrals"
+msgstr "Партнери та реферали"
+
+#: admin-pages.php:13
+msgid "Promotion"
+msgstr "Акція"
+
+#: admin-pages.php:36
+msgid "View affiliate links"
+msgstr "Переглянути партнерські посилання"
+
+#: admin-pages.php:43
+msgid "Home page"
+msgstr "Домашня сторінка"
+
+#: admin-pages.php:55
+msgid "The current reference"
+msgstr "Поточна довідка"
+
+#: admin-pages.php:56
+msgid "The appointment of the partner when registering"
+msgstr "Призначення партнера при реєстрації"
+
+#: admin-pages.php:57
+msgid "If registration took place without the affiliate link"
+msgstr "Якщо реєстрація відбулася без партнерського посилання"
+
+#: admin-pages.php:60 admin-pages.php:67 admin-pages.php:72
+msgid "Included"
+msgstr "У комплекті"
+
+#: admin-pages.php:62
+msgid "Specify the ID of the partner to which you will attach a new referral."
+msgstr "Вкажіть ідентифікатор партнера, до якого ви прикріпите новий реферал."
+
+#: admin-pages.php:63
+msgid "If empty, the partner is randomly assigned."
+msgstr "Якщо порожній, партнер призначається випадковим чином."
+
+#: admin-pages.php:65
+msgid "Reassign referrals when a user is deleted"
+msgstr "Переназначте реферали, коли користувач видалений"
+
+#: admin-pages.php:68
+msgid ""
+"If enabled, the referrals of the user to remove attached to the partner "
+"whose referral it is"
+msgstr ""
+"Якщо ввімкнено, реферали користувача для видалення додаються до партнера, "
+"рефералом якого він є"
+
+#: admin-pages.php:70
+msgid "The link to the partner profile"
+msgstr "Посилання на профіль партнера"
+
+#: admin-pages.php:73
+msgid ""
+"If enabled, the referral system also displays link to the profile of the "
+"inviting partner"
+msgstr ""
+"Якщо ввімкнено, система рефералів також відображає посилання на профіль "
+"запрошуючого партнера"
+
+#: admin-pages.php:75
+msgid "Ограничение кол-ва рефералов"
+msgstr "Обмеження кількості рефералів"
+
+#: admin-pages.php:77
+msgid ""
+"Опция ограничивает количество прямых рефералов для партнера, если пусто, то "
+"без ограничений"
+msgstr ""
+"Опція обмежує кількість прямих рефералів для партнера, якщо порожньо, то "
+"без обмежень"
+
+#: admin-pages.php:80
+msgid "The number of levels affiliate program"
+msgstr "Кількість рівнів партнерської програми"
+
+#: admin-pages.php:107 admin-pages.php:292
+msgid "Registration"
+msgstr "Реєстрація"
+
+#: admin-pages.php:108 admin-pages.php:293
+msgid "Completion of a personal account"
+msgstr "Поповнення особового рахунку"
+
+#: admin-pages.php:109 admin-pages.php:294
+msgid "Order payment"
+msgstr "Замовлення оплати"
+
+#: admin-pages.php:112
+msgid "No"
+msgstr "Немає"
+
+#: admin-pages.php:113
+msgid "Points"
+msgstr "Очки"
+
+#: admin-pages.php:114
+msgid "Payment"
+msgstr "Оплата"
+
+#: admin-pages.php:115
+msgid "Interest"
+msgstr "Інтерес"
+
+#: admin-pages.php:118
+msgid "Promotion referral register"
+msgstr "Реєстр реферальних рефералів"
+
+#: admin-pages.php:119 admin-pages.php:139
+msgid "Type"
+msgstr "Тип"
+
+#: admin-pages.php:128 admin-pages.php:146
+msgid "Size"
+msgstr "Розмір"
+
+#: admin-pages.php:130
+msgid "Promote partner referral for action"
+msgstr "Популяризуйте направлення партнерів на дії"
+
+#: admin-pages.php:156
+msgid "Save the settings"
+msgstr "Збережіть налаштування"
+
+#: admin-pages.php:219 admin-pages.php:355
+msgid "Cancellation of reward for referral"
+msgstr "Скасування винагороди за направлення"
+
+#: admin-pages.php:259
+msgid "Track produced rewards partners"
+msgstr "Вiдслiдковувати винагороди партнерiв"
+
+#: admin-pages.php:262 admin-pages.php:407
+msgid "Search"
+msgstr "Пошук"
+
+#: admin-pages.php:264 admin-pages.php:409
+msgid "Search user"
+msgstr "Пошук користувача"
+
+#: admin-pages.php:271
+msgid "Action"
+msgstr "Дія"
+
+#: admin-pages.php:272 admin-pages.php:438
+msgid "Delete"
+msgstr "Видалити"
+
+#: admin-pages.php:274
+msgid "Apply"
+msgstr "Застосувати"
+
+#: admin-pages.php:282 admin-pages.php:417
+msgid "Partner"
+msgstr "Партнер"
+
+#: admin-pages.php:283 admin-pages.php:418 index.php:127 index.php:247
+msgid "Referral"
+msgstr "Реферал"
+
+#: admin-pages.php:284
+msgid "Event:Type promotion"
+msgstr "Подiя: Тип просування"
+
+#: admin-pages.php:285 index.php:128 index.php:248
+msgid "Size promotion"
+msgstr "Розмiр просування"
+
+#: admin-pages.php:286 admin-pages.php:420 index.php:86 index.php:129
+#: index.php:219 index.php:249
+msgid "Date and time"
+msgstr "Дата і час"
+
+#: admin-pages.php:300
+msgid "Reputation"
+msgstr "Репутація"
+
+#: admin-pages.php:301
+msgid "Lump sum payment"
+msgstr "Одноразова виплата"
+
+#: admin-pages.php:302
+msgid "A percentage of purchases referral"
+msgstr "Відсоток направлених покупок"
+
+#: admin-pages.php:306 index.php:136 index.php:256
+msgid "points"
+msgstr "бали"
+
+#: admin-pages.php:310
+msgid "Unknown event"
+msgstr "Невідома подія"
+
+#: admin-pages.php:321 index.php:143 index.php:264
+msgid "Sum order"
+msgstr "Порядок підсумовування"
+
+#: admin-pages.php:404
+msgid "Statistics activity partners"
+msgstr "Статистична діяльність партнерів"
+
+#: admin-pages.php:419 index.php:85 index.php:218
+msgid "URL"
+msgstr "URL-адреса"
+
+#: index.php:28
+msgid "You're a partner!"
+msgstr "Ти партнер!"
+
+#: index.php:37 index.php:213
+msgid "Attached referrals"
+msgstr "Додані реферали"
+
+#: index.php:45
+msgid "Charges"
+msgstr "Нарахування"
+
+#: index.php:59
+msgid "Was referrals"
+msgstr "Зареєстровані реферали"
+
+#: index.php:64 index.php:197
+msgid "Your upstream partner"
+msgstr "Ваш партнер вище"
+
+#: index.php:67 index.php:200 widgets.php:40
+msgid "Your affiliate link"
+msgstr "Ваше партнерське посилання"
+
+#: index.php:72
+msgid "You have not yet registered referrals"
+msgstr "Ви ще не зареєстрували рефералів"
+
+#: index.php:83 index.php:217
+msgid "Your referral"
+msgstr "Ваш реферал"
+
+#: index.php:84
+msgid "Number of referrals"
+msgstr "Кількість рефералів"
+
+#: index.php:110 index.php:243
+msgid "Statistics of rewards"
+msgstr "Статистика винагород"
+
+#: index.php:115
+msgid "You didn`t get rewards for the actions of your referrals"
+msgstr "Ви не отримали нагороди за дії своїх рефералів"
+
+#: index.php:274
+msgid "You have no referrals"
+msgstr "У вас немає рефералів"
+
+#: widgets.php:17 widgets.php:19 widgets.php:43 widgets.php:68
+msgid "The last referrals"
+msgstr "Останні реферали"
+
+#: widgets.php:48
+msgid "Complete statistics"
+msgstr "Повна статистика"
+
+#: widgets.php:51
+msgid "You have not invited anyone."
+msgstr "Ви нікого не запросили."
+
+#: widgets.php:71
+msgid "Title"
+msgstr "Назва"
+
+#: widgets.php:75
+msgid "The number of referrals"
+msgstr "Кількість рефералів"
+
+msgid "payment"
+msgstr "оплата"
+
+msgid "payments"
+msgstr "платежі"
+
+msgid "No payments found."
+msgstr "Платежи не найдены."
+
+msgid "Users"
+msgstr "Користувачі"
+
+msgid "Parish"
+msgstr "Надходження"
+
+msgid "Consumption"
+msgstr "Споживання"
+
+msgid "The rest"
+msgstr "Залишок"
+
+msgid "Comment"
+msgstr "Коментар"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "All history"
+msgstr "Вся історія"
+
+msgid "Flow of funds"
+msgstr "Потік коштів"
+
+msgid "No orders found."
+msgstr "Заказы не найдены."
+
+msgid "Consideration"
+msgstr "Розгляд"
+
+msgid "Made"
+msgstr "Зроблено"
+
+msgid "User"
+msgstr "Користувач"
+
+msgid "Amount request"
+msgstr "Сума запиту"
+
+msgid "Withdrawal amount"
+msgstr "Сума зняття"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Payments history"
+msgstr "Історія платежів"
+
+msgid "All requests"
+msgstr "Усі запити"
+
+msgid "Reject"
+msgstr "Відхилити"
+
+msgid "Approve"
+msgstr "Одобрить"
+
+msgid "Filter by date"
+msgstr "Фільтр за датою"
+
+msgid "All dates"
+msgstr "Усі дати"
+
+msgid "Payments"
+msgstr "Виплати"
+
+msgid "Requests history"
+msgstr "Запрошує історію"
+
+msgid "Filter"
+msgstr "Фільтр"
+
+msgid "The transfer of funds"
+msgstr "Переказ коштiв"
+
+msgid "Transfer"
+msgstr "Передача"
+
+msgid "Enter the transfer amount"
+msgstr "Введіть суму переказу"
+
+msgid "Specify the number of"
+msgstr "Вкажіть  число"
+
+msgid "You seriously?"
+msgstr "Ви впевненi?"
+
+msgid "Insufficient funds on personal account!"
+msgstr "Недостатньо коштiв на особистому рахунку!"
+
+msgid "Withdrawal"
+msgstr "Виведення"
+
+msgid "Settings personal account"
+msgstr "Налаштування особистого рахунку"
+
+msgid "Allow withdrawals?"
+msgstr "Дозволити зняття коштів?"
+
+msgid "Not allowed"
+msgstr "Не дозволяти"
+
+msgid "Allowed"
+msgstr "Дозволити"
+
+msgid "Payment system which permitted withdrawal"
+msgstr "Платіжна система, яка дозволила зняти"
+
+msgid ""
+"Specify comma-separated names of payment systems which the user can choose "
+"to withdraw funds"
+msgstr ""
+"Укажіть розділені комами назви платіжних систем, які користувач може "
+"вибрати для зняття коштів"
+
+msgid "The percentage of Commission for withdrawal of funds"
+msgstr "Відсоток комісії за зняття коштів"
+
+msgid "If nothing is specified, the withdrawal Commission is not charged"
+msgstr "Якщо нічого не вказано, комісія за відкликання не стягується"
+
+msgid "Bring personal account in the advanced tab"
+msgstr "Перенесіть особистий рахунок на розширену вкладку"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Transfer of funds between users"
+msgstr "Переказ коштів між користувачами"
+
+msgid "Balance"
+msgstr "Баланс"
+
+msgid "Personal account of the user"
+msgstr "Особистний рахунок користувача"
+
+msgid "The withdrawal request"
+msgstr "Запит на відкликання"
+
+msgid "Date of request"
+msgstr "Дата запита"
+
+msgid "The amount of the request"
+msgstr "Сума запиту"
+
+msgid "The Commission"
+msgstr "Комiсiя"
+
+msgid "cancel"
+msgstr "вiдмiна"
+
+msgid "Payment system"
+msgstr "Платіжна система"
+
+msgid "The number of purse"
+msgstr "Номер гаманця"
+
+msgid "Withdrawal amount (Commission for withdrawal %s)"
+msgstr "Сума зняття (комісія за зняття %s)"
+
+msgid "Send enquiry"
+msgstr "Надiслати запит"
+
+msgid "The history of balance changes"
+msgstr "Історія змін балансу"
+
+msgid "The account balance"
+msgstr "Залишок на рахунку"
+
+msgid "You haven`t had the movements of funds on the personal account"
+msgstr "Ви не мали грошових коштів на особовому рахунку"
+
+msgid "Make transfer"
+msgstr "Зробити переказ"
+
+msgid "The transfer of funds to the user"
+msgstr "Переказ коштів користувачеві"
+
+msgid "The funds coming from the user"
+msgstr "Кошти, що надходять від користувача"
+
+msgid "Money transfer"
+msgstr "Грошовий переказ"
+
+msgid ""
+"Into your personal account with the website \"%s\" was transferred from "
+"another user"
+msgstr ""
+"На ваш особистний рахунок \"%s\" надiйшли кошти вiд iншого користувача"
+
+msgid "The user %s has transferred to your personal account %s"
+msgstr "Користувач %s перейшов до вашого особистого облікового запису %s"
+
+msgid "The funds were successfully transferred to the account of that user"
+msgstr "Кошти були успішно перераховані на рахунок цього користувача"
+
+msgid "Lock means on request"
+msgstr "Блокування за запитом"
+
+msgid "Request the withdrawal"
+msgstr "Попросити відкликання"
+
+msgid "Request data"
+msgstr "Данi запиту"
+
+msgid "Account number"
+msgstr "Номер рахунка"
+
+msgid "The withdrawal request is well formed"
+msgstr "Запит на відкликання добре сформований"
+
+msgid "Sum"
+msgstr "Сума"
+
+msgid "Processing"
+msgstr "Обробка"
+
+msgid "Refund with lock on request"
+msgstr "Відшкодування за допомогою блокування за запитом"
+
+msgid "The withdrawal request was cancelled"
+msgstr "Запит на відкликання скасовано"
+
+msgid "Your request for withdrawal has been rejected"
+msgstr "Ваш запит на відкликання відхилено"
+
+msgid "Information about the transfer"
+msgstr "Інформація про передачу"
+
+msgid "The amount of the transfer"
+msgstr "Сума переказу"
+
+msgid "The blocked funds were returned to your personal account"
+msgstr "Заблоковані кошти повернуті на ваш особистий рахунок"
+
+msgid "For a withdrawal to"
+msgstr "Для виводу до"
+
+msgid "The request for withdrawal is made"
+msgstr "Прохання про відкликання подається"
+
+msgid "Your request for withdrawal has been approved"
+msgstr "Ваш запит на відкликання затверджено"
+
+msgid "History"
+msgstr "Історія"
+
+msgid "ОК"
+msgstr "ОК"
+
+msgid "Specify the amount of transfer!"
+msgstr "Вкажіть суму переказу!"
+
+msgid "Are you sure?"
+msgstr "Ви впевненi?"
+
+msgid "Your account has insufficient funds!"
+msgstr "На Вашому рахунку не достатньо коштiв!"
+
+msgid "Specify the number of purse!"
+msgstr "Вкажіть номер гаманця!"
+
+msgid "Management of withdrawal requests"
+msgstr "Управління запитами на зняття"
+
+msgid "To balance user"
+msgstr "До балансу користувача"
+
+msgid "At the moment, the query is no"
+msgstr "На даний час запити вiдсутнi"
+
+msgid "Settings background"
+msgstr "Налаштування фону"
+
+msgid "Background private account"
+msgstr "Фон приватного облікового запису"
+
+msgid "Profile field for background"
+msgstr "Поле профілю для фону"
+
+msgid ""
+"Specify the type of profile field \"File\" to through it could set the "
+"background image for your personal account"
+msgstr ""
+"Вкажіть тип поля профілю \"Файл\", щоб через нього можна було встановити "
+"фонове зображення для вашого особистого облікового запису"

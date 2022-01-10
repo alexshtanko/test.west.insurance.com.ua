@@ -1,0 +1,81 @@
+.wgl-iconpicker .iconpicker-popover {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	list-style: none;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	background-clip: padding-box;
+}
+
+.wgl-iconpicker .iconpicker-popover .arrow {
+	display: none !important;
+}
+
+.wgl-iconpicker .iconpicker-item {
+	/* Override some unfortunate WP default admin mobile styles */
+	width: 14px !important;
+	height: 14px !important;
+	padding: 14px !important;
+	font-size: 14px !important;
+	line-height: 1 !important;
+	box-shadow: 0 0 0 1px #ddd !important;
+}
+
+.wgl-iconpicker input[type="search"] {
+	width: 100%;
+}
+
+.wgl-iconpicker .iconpicker-popover.popover {
+	width: 253px;
+}
+
+.wgl-iconpicker .iconpicker-component i {
+	display: none;
+}
+.redux-main label.color-transparency-check {
+	margin-top: 10px !important;
+}
+.redux-container-image_select ul.redux-image-select li{
+	padding-right: 6px;
+}
+.redux-color-rgba.sp-replacer{
+	padding: 0;
+    box-shadow: 0 1px 0 #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.redux-color-rgba .sp-preview{
+	width: 32px;
+    height: 24px;
+    border: 0;
+	margin-right: 0;
+}
+.redux-color-rgba .sp-dd{
+	padding: 3px 6px;
+    font-size: 11px;
+}
+.redux-color-rgba.sp-replacer:focus, 
+.redux-color-rgba.sp-replacer:hover {
+    color: #23282d;
+    border-color: #a0a5aa;
+    border-left: 1px solid #999;
+}
+.check-list-width .vc_checkbox-label{
+	display: inline-block;
+	width: 170px;
+	padding: 4px 0;
+}
+.vc_shortcodes_container.wpb_wgl_timetab {
+    background-color: #f5f5f5;
+}

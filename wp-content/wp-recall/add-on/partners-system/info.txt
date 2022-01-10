@@ -1,0 +1,8 @@
+Name: Partners System;
+Version: 1.14.4;
+Support Core: 16.16.0;
+Item ID: 7785;
+Key ID: prtsys;
+Description: Система партнерской программы. Требует активированного дополнения личного счета.;
+Author: Плечев Андрей;
+Author URI: http://codeseller.ru/;

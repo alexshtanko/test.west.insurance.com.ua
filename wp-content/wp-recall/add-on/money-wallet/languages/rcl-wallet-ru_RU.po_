@@ -1,0 +1,427 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-24 15:37+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: history-payments.php:29 history-requests.php:31
+msgid "payment"
+msgstr "платеж"
+
+#: history-payments.php:30 history-requests.php:32
+msgid "payments"
+msgstr "платежи"
+
+#: history-payments.php:55
+msgid "No payments found."
+msgstr "Платежи не найдены"
+
+#: history-payments.php:81
+msgid "Users"
+msgstr "Пользователи"
+
+#: history-payments.php:82 index.php:225
+msgid "Parish"
+msgstr "Приход"
+
+#: history-payments.php:82 index.php:225
+msgid "Consumption"
+msgstr "Расход"
+
+#: history-payments.php:83 index.php:226
+msgid "The rest"
+msgstr "Остаток"
+
+#: history-payments.php:84 history-requests.php:100 index.php:161 index.php:227
+#: index.php:430
+msgid "Comment"
+msgstr "Комментарий"
+
+#: history-payments.php:85 history-requests.php:101 index.php:426
+msgid "Date"
+msgstr "Дата"
+
+#: history-payments.php:92
+msgid "All history"
+msgstr "Вся история"
+
+#: history-payments.php:205 history-payments.php:219 index.php:40
+msgid "Flow of funds"
+msgstr "Движение средств"
+
+#: history-requests.php:58
+msgid "No orders found."
+msgstr "Заказы не найдены"
+
+#: history-requests.php:84 history-requests.php:124 index.php:171
+msgid "Consideration"
+msgstr "Рассмотрение"
+
+#: history-requests.php:87 history-requests.php:117
+msgid "Made"
+msgstr "Произведен"
+
+#: history-requests.php:97
+msgid "User"
+msgstr "Пользователь"
+
+#: history-requests.php:98
+msgid "Amount request"
+msgstr "Сумма запроса"
+
+#: history-requests.php:99 index.php:160 index.php:429
+msgid "Withdrawal amount"
+msgstr "Сумма вывода"
+
+#: history-requests.php:102 index.php:162 index.php:431
+msgid "Status"
+msgstr "Статус"
+
+#: history-requests.php:109
+msgid "Payments history"
+msgstr "История платежей"
+
+#: history-requests.php:110
+msgid "All requests"
+msgstr "Все запросы"
+
+#: history-requests.php:120
+msgid "Reject"
+msgstr "Отклонить"
+
+#: history-requests.php:121
+msgid "Approve"
+msgstr "Одобрить"
+
+#: history-requests.php:129
+msgid "Delete"
+msgstr "Удалить"
+
+#: history-requests.php:156
+msgid "Filter by date"
+msgstr "Фильтр по дате"
+
+#: history-requests.php:158
+msgid "All dates"
+msgstr "Все даты"
+
+#: history-requests.php:167
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: history-requests.php:311
+msgid "Payments"
+msgstr "Платежи"
+
+#: history-requests.php:324
+msgid "Requests history"
+msgstr "История запросов"
+
+#: history-requests.php:332
+msgid "Filter"
+msgstr "Фильтр"
+
+#: index.php:25 index.php:98
+msgid "The transfer of funds"
+msgstr "Перевод средств"
+
+#: index.php:26
+msgid "Transfer"
+msgstr "Перевод"
+
+#: index.php:27
+msgid "Enter the transfer amount"
+msgstr "Укажите сумму перевода"
+
+#: index.php:28
+msgid "Specify the number of"
+msgstr "Укажите число"
+
+#: index.php:29
+msgid "You seriously?"
+msgstr "Вы уверены?"
+
+#: index.php:30
+msgid "Insufficient funds on personal account!"
+msgstr "Недостаточно средств на личном счету!"
+
+#: index.php:38 index.php:64 index.php:536
+msgid "Withdrawal"
+msgstr "Вывод средств"
+
+#: index.php:61
+msgid "Settings personal account"
+msgstr "Настройки личного счета"
+
+#: index.php:66
+msgid "Allow withdrawals?"
+msgstr "Разрешить снятие?"
+
+#: index.php:70 index.php:103
+msgid "Not allowed"
+msgstr "Не разрешать"
+
+#: index.php:70 index.php:103
+msgid "Allowed"
+msgstr "Разрешить"
+
+#: index.php:79
+msgid "Payment system which permitted withdrawal"
+msgstr "Платежная система которой разрешен вывод средств"
+
+#: index.php:81
+msgid ""
+"Specify comma-separated names of payment systems which the user can choose "
+"to withdraw funds"
+msgstr ""
+"Укажите через запятую названия платежных систем, которые пользователь может "
+"выбрать для вывода средств"
+
+#: index.php:83
+msgid "The percentage of Commission for withdrawal of funds"
+msgstr "Процент комиссии за вывод средств"
+
+#: index.php:85
+msgid "If nothing is specified, the withdrawal Commission is not charged"
+msgstr "Если ничего не указано, то при выводе средств комиссия не взимается"
+
+#: index.php:88
+msgid "Bring personal account in the advanced tab"
+msgstr "Вывод личного счета во вкладке дополнения"
+
+#: index.php:92
+msgid "No"
+msgstr "Нет"
+
+#: index.php:92
+msgid "Yes"
+msgstr "Да"
+
+#: index.php:100
+msgid "Transfer of funds between users"
+msgstr "Перевод средств между пользователями"
+
+#: index.php:113
+msgid "Balance"
+msgstr "Баланс"
+
+#: index.php:129
+msgid "Personal account of the user"
+msgstr "Личный счет пользователя"
+
+#: index.php:139
+msgid "The withdrawal request"
+msgstr "Форма запроса на вывод средств"
+
+#: index.php:157
+msgid "Date of request"
+msgstr "Дата запроса"
+
+#: index.php:158 index.php:416
+msgid "The amount of the request"
+msgstr "Сумма запроса"
+
+#: index.php:159 index.php:428
+msgid "The Commission"
+msgstr "Комиссия"
+
+#: index.php:172 index.php:441
+msgid "cancel"
+msgstr "отмена"
+
+#: index.php:182
+msgid "Payment system"
+msgstr "Платежная система"
+
+#: index.php:183
+msgid "The number of purse"
+msgstr "Номер кошелька"
+
+#: index.php:184
+#, php-format
+msgid "Withdrawal amount (Commission for withdrawal %s)"
+msgstr "Сумма на вывод (Комиссия при выводе %s)"
+
+#: index.php:185
+msgid "Send enquiry"
+msgstr "Отправить запрос"
+
+#: index.php:220
+msgid "The history of balance changes"
+msgstr "История изменения баланса"
+
+#: index.php:221
+msgid "The account balance"
+msgstr "Остаток на счете"
+
+#: index.php:260
+msgid "You haven`t had the movements of funds on the personal account"
+msgstr "У вас не было движений средств на лицевом счете"
+
+#: index.php:276
+msgid "Make transfer"
+msgstr "Сделать перевод"
+
+#: index.php:345
+msgid "The transfer of funds to the user"
+msgstr "Перевод средств пользователю"
+
+#: index.php:352
+msgid "The funds coming from the user"
+msgstr "Денежные средства, поступающие от пользователя"
+
+#: index.php:354
+msgid "Money transfer"
+msgstr "Денежный перевод"
+
+#: index.php:356
+#, php-format
+msgid ""
+"Into your personal account with the website \"%s\" was transferred from "
+"another user"
+msgstr ""
+"На ваш личный счет внутри сайта \"%s\" поступили средства от другого "
+"пользователя"
+
+#: index.php:357
+#, php-format
+msgid "The user %s has transferred to your personal account %s"
+msgstr "Пользователь %s произвел перевод средств на ваш личный счет %s"
+
+#: index.php:362
+msgid "The funds were successfully transferred to the account of that user"
+msgstr "Средства были успешно перечислены на счет этого пользователя"
+
+#: index.php:390
+msgid "Lock means on request"
+msgstr "Блокировка средств по запросу на вывод"
+
+#: index.php:413
+msgid "Request the withdrawal"
+msgstr "Запрос на вывод средств"
+
+#: index.php:415
+msgid "Request data"
+msgstr "Данные запроса"
+
+#: index.php:417 index.php:477 index.php:519
+msgid "Account number"
+msgstr "Номер счета"
+
+#: index.php:423
+msgid "The withdrawal request is well formed"
+msgstr "Запрос на вывод средств сформирован"
+
+#: index.php:427
+msgid "Sum"
+msgstr "Сумма"
+
+#: index.php:440
+msgid "Processing"
+msgstr "Обработка"
+
+#: index.php:470
+msgid "Refund with lock on request"
+msgstr "Возврат средств с блокировки по запросу"
+
+#: index.php:472 index.php:487
+msgid "The withdrawal request was cancelled"
+msgstr "Запрос на вывод средств был отменен"
+
+#: index.php:474
+msgid "Your request for withdrawal has been rejected"
+msgstr "Ваш запрос на вывод средств был отклонен"
+
+#: index.php:475 index.php:517
+msgid "Information about the transfer"
+msgstr "Информация о переводе"
+
+#: index.php:476 index.php:518
+msgid "The amount of the transfer"
+msgstr "Сумма перевода"
+
+#: index.php:478
+msgid "The blocked funds were returned to your personal account"
+msgstr "Заблокированные средства были возвращены на ваш личный счет"
+
+#: index.php:512
+msgid "For a withdrawal to"
+msgstr "Вывод средств на счет"
+
+#: index.php:514 index.php:526
+msgid "The request for withdrawal is made"
+msgstr "Запрос на вывод сделан"
+
+#: index.php:516
+msgid "Your request for withdrawal has been approved"
+msgstr "Ваш запрос на вывод средств был одобрен"
+
+#: index.php:541
+msgid "History"
+msgstr "История"
+
+#~ msgid "ОК"
+#~ msgstr "ОК"
+
+#~ msgid "Specify the amount of transfer!"
+#~ msgstr "Укажите сумму перевода!"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Вы уверены?"
+
+#~ msgid "Your account has insufficient funds!"
+#~ msgstr "На Вашем счете недостаточно средств!"
+
+#~ msgid "Specify the number of purse!"
+#~ msgstr "Укажите номер кошелька!"
+
+#~ msgid "Management of withdrawal requests"
+#~ msgstr "Управление запросами на снятие"
+
+#~ msgid "Action"
+#~ msgstr "Действие"
+
+#~ msgid "Apply"
+#~ msgstr "Применить"
+
+#~ msgid "To balance user"
+#~ msgstr "К балансу пользователя"
+
+#~ msgid "At the moment, the query is no"
+#~ msgstr "На данный момент запросов нет"
+
+#~ msgid "Settings background"
+#~ msgstr "Настройки фона"
+
+#~ msgid "Background private account"
+#~ msgstr "Фон личного кабинета"
+
+#~ msgid "Profile field for background"
+#~ msgstr "Поле профиля для фона"
+
+#~ msgid ""
+#~ "Specify the type of profile field \"File\" to through it could set the "
+#~ "background image for your personal account"
+#~ msgstr ""
+#~ "Выберите поле профиля типа \"Файл\" и укажите его для установки фонового "
+#~ "изображения в личном кабинете"

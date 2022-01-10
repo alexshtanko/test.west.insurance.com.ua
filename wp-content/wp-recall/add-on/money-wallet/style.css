@@ -1,0 +1,42 @@
+/*Продвинутый кошелек*/
+.wprecallblock .add-count-form {
+    border: 1px solid #CCCCCC;
+    display: none;
+    padding: 5px;
+}
+.wprecallblock .add-count-form #count-size {
+    padding: 4px;
+    width: 70px;
+}
+.wprecallblock .add-count-form #submit-add-count {
+    display: inline-block!important;
+    padding: 6px;
+}
+.wprecallblock .output-user-count {
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+    padding: 5px;
+}
+.wprecallblock .output-user-count select, .wprecallblock .output-user-count input[type="text"] {
+    width: 200px;
+	margin: 0;
+}
+.wprecallblock .output-user-count input[type="button"] {
+    float: right;
+}
+#wallet_block td{
+    font-size:12px;
+}
+#wallet_block tr:nth-child(2),
+#wallet_block tr:nth-child(3),
+#wallet_block tr:nth-child(4){
+    white-space: nowrap;
+} 
+.rcl-money-transfer #count-size{
+    width:300px;
+    display:block;
+    margin:10px auto;
+}
+.wprecallblock div.output-user-count {
+    overflow-x: scroll;
+}

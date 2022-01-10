@@ -1,0 +1,7 @@
+Name: Contracts info;
+Version: 1.0;
+Description: Дополнение для WP-Recall, добавляющее свою вкладку с информацией о заключенных контрактах;
+Support Core: 10.0.0;
+Author: Андрей Куценко;
+Author Uri: https://kutsenko.top;
+Add-on Uri: https://kutsenko.top;

@@ -1,0 +1,292 @@
+/* ==================== ##General Styles ==================== */
+
+body {
+	font-size: $content_font_size;
+	line-height: $content_line_height;
+	font-weight: $content_font_weight;
+	color: $content_color;
+}
+
+/* ==================== ##End General Styles ==================== */
+
+/* ==================== ##Content Styles ==================== */
+
+body,
+.author-info_name,
+.seofy_module_message_box .message_content .message_title,
+.seofy_module_videobox .title,
+.vc_row .vc_toggle .vc_toggle_title h4,
+.single_team_page .team-info_wrapper .team-info_item span,
+.wpb-js-composer .vc_row .vc_tta.vc_general .vc_tta-panel-title > a span,
+.wpb-js-composer .wgl-container .vc_row .vc_pie_chart .wpb_pie_chart_heading,
+.seofy_module_time_line_vertical .time_line-title{
+	font-family: $content_font_family;
+}
+
+select,
+ul.wgl-pagination li span,
+.blog-post.format-quote .blog-post_quote-author-pos,
+.seofy_module_testimonials .testimonials_quote,
+.recent-posts-widget .meta-wrapper a:hover,
+.tagcloud a,
+blockquote cite,
+#comments .comment-reply-link:hover,
+body input::placeholder,
+body textarea::placeholder,
+.share_post-container:hover > a,
+.vc_row .vc_toggle .vc_toggle_icon{
+	color: $content_color;
+}
+
+.seofy_module_carousel .slick-prev:after, 
+.seofy_module_carousel .slick-next:after{
+	border-color: $content_color;
+}
+
+.seofy_module_title .external_link .button-read-more {
+	line-height: $content_line_height;
+}
+
+/* ==================== ##End Content Styles ==================== */
+
+/* ==================== ##Heading Styles ==================== */
+
+h1,h2,h3,h4,h5,h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.page-header .page-header_title,
+.button-read-more,
+.blog-post_cats,.cats_post,
+.column1 .item_title a,
+.seofy_twitter .twitt_title,
+.tagcloud-wrapper .title_tags,
+.strip_template .strip-item a span,
+.single_team_page .team-single_speaches-info .speech-info_desc span,
+.shortcode_tab_item_title,
+.index_number,
+.primary-nav.footer-menu .menu-item a{
+	font-family: $header_font_family;
+	font-weight: $header_font_weight;
+}
+
+#main ol > li:before, 
+blockquote,
+body .widget_rss ul li .rss-date,
+body .widget .widget-title,
+label,
+legend,
+.author-info_content .author-info_name,
+.blog-post.format-quote .blog-post_quote-author,
+.blog-post_link>.link_post,
+.blog-post_quote-text,
+.blog-post_views-wrap .counts,
+.blog-post_meta-date .date_post span,
+.countdown-section .countdown-amount,
+.custom-header-font,
+.comments-title .number-comments,
+.dropcap,
+.seofy_module_counter .counter_value_wrap,
+.seofy_module_counter .counter_value_hide,
+.seofy_module_double_headings,
+.seofy_module_infobox .infobox_icon_container .infobox_icon_number,
+.seofy_module_pricing_plan .pricing_price_wrap,
+.isotope-filter a .number_filter,
+.mashsb-count .counts,
+.mashsb-box .mashsb-buttons a .text,
+.prev-link,
+.next-link,
+.vc_row .vc_tta.vc_general.vc_tta-style-accordion_bordered .vc_tta-panel-title>a span,
+.wgl_timetabs .timetabs_headings .wgl_tab .tab_title,
+.widget.seofy_widget.seofy_banner-widget .banner-widget_text,
+.widget.seofy_widget.seofy_banner-widget .banner-widget_text_bg,
+.blog-post_meta-categories a, 
+.blog-post_meta-categories span, 
+.blog-post_meta-date .date_post,
+.seofy_module_counter .counter_title,
+.seofy_module_progress_bar .progress_label, 
+.seofy_module_progress_bar .progress_value, 
+.seofy_module_progress_bar .progress_units,
+.isotope-filter a,
+.heading_subtitle,
+.info_prev-link_wrapper a,
+.info_next-link_wrapper a,
+.widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title,
+.page-header_breadcrumbs .breadcrumbs,
+.single_meta .single_info-share_social-wpapper > span.share_title,
+.single_team_page .team-single_speaches-info .speech-info_day,
+.single_team_page .team-info_wrapper .team-info_item,
+.wgl_portfolio_item-meta .post_cats,
+.single_team_page .team-info_wrapper .team-info_item,
+.portfolio_info_item-info_desc h5,
+.single_info-share_social-wpapper > span{
+	font-family: $header_font_family;
+}
+
+.banner_404,
+.wgl_portfolio_single-item .tagcloud .tagcloud_desc,
+.wgl_timetabs .timetabs_data .timetabs_item .item_time,
+.wgl_timetabs .timetabs_data .timetabs_item .content-wrapper .item_title,
+.wpb-js-composer .wgl-container .vc_row .vc_pie_chart .vc_pie_chart_value{
+	font-family: $header_font_family;
+	color: $header_font_color;
+}
+
+#comments .comment-reply-link,
+ul.wgl-pagination li a,
+body .footer select option,
+body .widget .widget-title,
+blockquote,
+h1,h2,h3,h4,h5,h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h3#reply-title a,
+ul.wgl-pagination li span.current,
+ul.wgl-pagination li a:hover,
+.seofy_module_carousel .slick-prev:after, 
+.seofy_module_carousel .slick-next:after,
+.prev-link-info_wrapper,
+.next-link-info_wrapper,
+.author-info_wrapper .title_soc_share,
+.author-widget_title,
+.blog-post_quote-author,
+.header_search.search_standard .header_search-field .search-form:after,
+.calendar_wrap tbody,
+.comment_author_says,
+.comment_author_says a,
+.single_meta .blog-post_share-wrap > span.share_title,
+.seofy_module_counter .counter_title,
+.single_meta .single_info-share_social-wpapper > span.share_title,
+.seofy_module_double_headings .heading_title,
+.seofy_module_testimonials .testimonials_item .testimonials_content_wrap .testimonials_name,
+.seofy_module_progress_bar .progress_label, 
+.seofy_module_progress_bar .progress_value, 
+.seofy_module_progress_bar .progress_units,
+.seofy_module_pricing_plan .pricing_plan_wrap .pricing_content > ul > li > b,
+.seofy_module_pricing_plan .pricing_plan_wrap .pricing_price_wrap,
+.tagcloud-wrapper .title_tags,
+.item_title a,
+.single_info-share_social-wpapper > span,
+.wgl_module_title.item_title .carousel_arrows a span:after,
+.wgl_module_team.info_under_image .team-department,
+.widget_search .search-form:after,
+.widget.widget_archive ul li:before,
+.widget.widget_recent_entries ul li:before,
+.widget.widget_meta ul li:before,
+.widget.widget_categories ul li:before,
+.widget.widget_wgl_posts .recent-posts-widget .post_title a,
+.widget.widget_archive ul li, 
+.widget.widget_pages ul li, 
+.widget.widget_meta ul li, 
+.widget.widget_recent_comments ul li, 
+.widget.widget_recent_entries ul li, 
+.widget.widget_nav_menu ul li,
+.widget.widget_categories ul li,
+.wpb-js-composer .vc_row .vc_general.vc_tta-tabs .vc_tta-tabs-list .vc_tta-tab > a,
+.wpb-js-composer .wgl-container .vc_chart.vc_round-chart[data-vc-legend="1"] .vc_chart-legend li,
+.wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-accordion .vc_tta-panels-container .vc_tta-panel .vc_tta-panel-heading .vc_tta-panel-title,
+.wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-accordion .vc_tta-panels-container .vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title > a .vc_tta-controls-icon,
+.wpb-js-composer .wgl-container .vc_row .vc_toggle.vc_toggle_active .vc_toggle_title .vc_toggle_icon,
+.wgl_timetabs .timetabs_headings .wgl_tab.active .tab_title,
+.wgl_timetabs .timetabs_headings .wgl_tab:hover .tab_title,
+.isotope-filter.filter_def a .number_filter,
+.inside_image .wgl_portfolio_item-title .title,
+.isotope-filter a:not(.active):not(:hover){
+	color: $header_font_color;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+	color: $header_font_color;
+}
+
+.seofy_module_title .carousel_arrows a span {
+	background: $header_font_color;
+}
+
+.seofy_module_infobox.infobox_alignment_left.title_divider .infobox_title:before,
+.seofy_module_infobox.infobox_alignment_right.title_divider .infobox_title:before{
+	background-color: $header_font_color;
+} 
+
+.blog-post_cats span a:hover, 
+.cats_post span a:hover, 
+.cats_post a:hover{
+	background-color: $header_font_color !important;	
+}
+
+.seofy_module_title .carousel_arrows a span:before {
+	border-color: $header_font_color;
+}
+
+/* ==================== ##End Heading Styles ==================== */
+
+/* ==================== ##Secondary Styles ==================== */
+
+.wgl-theme-header .wgl-sticky-header .header_search{
+	height: $header_sticky_height !important;
+}    
+
+#scroll_up {
+	background-color: $scroll_up_bg_color;
+	color: $scroll_up_arrow_color;
+}
+
+.wgl-sticky-header .wgl-header-row .primary-nav .lavalamp-object{
+	background-color: $header_sticky_color;
+}
+
+/* menu fonts */
+.primary-nav>div>ul,
+.primary-nav>ul,
+.primary-nav ul li.mega-menu-links > ul > li{
+	font-family: $menu_font_family;
+	font-weight: $menu_font_weight;
+	line-height: $menu_font_line_height;
+	font-size: $menu_font_size;
+}
+/* sub menu fonts */
+.primary-nav ul li ul, 
+.wpml-ls,
+.primary-nav ul li div.mega-menu-container{
+	font-family: $sub_menu_font_family;
+	font-weight: $sub_menu_font_weight;
+	line-height: $sub_menu_font_line_height;
+	font-size: $sub_menu_font_size;	
+}
+
+/* sub menu styles */
+.wgl-theme-header .header_search-field,
+.primary-nav ul li ul,
+.primary-nav ul li div.mega-menu-container,
+.wgl-theme-header .woo_mini_cart,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language .wpml-ls-sub-menu{
+	background-color: $sub_menu_bg;
+	color: $sub_menu_color;
+}
+
+.wgl-header-row-section_top .primary-nav .lavalamp-object{
+	background-color: $menu_color_top;
+}
+.wgl-header-row-section_middle .primary-nav .lavalamp-object{
+	background-color: $menu_color_middle;
+}
+.wgl-header-row-section_bottom .primary-nav .lavalamp-object{
+	background-color: $menu_color_bottom;
+}
+
+.mobile_nav_wrapper,
+.wgl-menu_outer,
+.mobile_nav_wrapper .primary-nav ul li ul.sub-menu,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul > li ul,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul{
+	background-color: $mobile_sub_menu_bg;
+	color: $mobile_sub_menu_color;		
+}
+
+/* ==================== ##End Secondary Styles ==================== */

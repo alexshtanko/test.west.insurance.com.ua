@@ -1,0 +1,7 @@
+Name: Lock Cabinet From Guests;
+Version: 2.1;
+Support Core: 16.16.0;
+Description: Закрывает контент личного кабинета от посторонних глаз. Кабинет будет виден только пользователям вошедшим на сайт (залогиненым);
+Author: Владимир Дружаев (Otshelnik-Fm);
+Author URI: https://otshelnik-fm.ru/;
+Add-on URI: https://codeseller.ru/products/lock-cabinet-from-guests/;

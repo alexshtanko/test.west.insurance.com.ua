@@ -1,0 +1,269 @@
+<?php
+/**
+ * The template for manager page
+ Template Name: Сторінка менеджера
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Seofy
+ * @since 1.0
+ * @version 1.0
+ */
+
+get_header();
+the_post();
+
+$sb = Seofy_Theme_Helper::render_sidebars();
+$row_class = $sb['row_class'];
+$column = $sb['column'];
+date_default_timezone_set('Europe/Kiev');
+
+//$dateFrom = date('Y-m-d');
+$dateFrom = date('d.m.Y', strtotime('+1 day'));
+//$dateTo = date('Y-m-d', strtotime('+1 year -1 day'));
+$dateTo = date('d.m.Y', strtotime('+1 year'));
+
+
+//service_stop
+$table_ewa_config = $wpdb->prefix . "ewa_config";
+$service_stop = $wpdb->get_results("SELECT value FROM ".$table_ewa_config." WHERE `key` = 'service_stop'");
+?>
+    <div class="wgl-container">
+		<?php
+		if(count($service_stop) == 1 && $service_stop[0]->value == 1){
+			echo "<div class='steps'><h2>Сервіс тимчасово не працює!</h2></div>";
+		}
+		else {
+			$current_user = wp_get_current_user();
+			if ( $current_user->ID ) {
+				//$user = new WP_User( $current_user->ID );
+				//$user_roles = $user->roles;
+
+				$user = wp_get_current_user();
+				$allowed_roles = array( 'user_manager', 'administrator' );
+
+				if ( array_intersect( $allowed_roles, $user->roles ) ) {
+					//if ( in_array( 'administrator', $user_roles, true ) OR in_array( 'user_manager', $user_roles, true )) {
+					?>
+                    <div class="steps">
+
+                        <div class="row">
+                            <div class="vc_col-lg-12">
+                                <div class="step-1">
+
+                                    <div class="step-one-number" id="setNumber">
+                                        <h1>(Менеджер)</h1>
+                                        <h2>Розрахувати по номеру авто</h2>
+                                        <div class="step-one-number-inner">
+                                            <div class="title-silver">Для зареєстрованих в Україні</div>
+
+                                            <input type="text" class="inpt-1 car-number" placeholder="AA1234BP"
+                                                   oninput="this.value = this.value.toUpperCase()"/>
+
+                                            <div class="step-1-text">
+                                                або розрахувати<br>
+                                                <span class="get-calc" id="getCalc">на калькуляторі</span>
+                                            </div>
+
+                                            <button class="go-step-2" id="goStepTwo">Розрахувати вартість</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="step-one-calc" id="setCalc">
+
+                                        <h3>Калькулятор</h3>
+                                        <label>Тип транспортного засобу</label>
+
+                                        <div class="dd-list-wrapper">
+                                            <input class="dd-hide-filed" type="text" readonly="readonly">
+                                            <div class="dd-arrow"></div>
+                                            <div class="dd-list-input">Оберіть...</div>
+                                            <ul class="dd-list type-of-car">
+                                                <li data-type-car="A1">Мотоцикл / моторолер - до 300 см3</li>
+                                                <li data-type-car="A2">Мотоцикл / моторолер - більше 300 см3</li>
+                                                <li data-type-car="B1">Легковий автомобіль - до 1600 см3</li>
+                                                <li data-type-car="B2">Легковий автомобіль - 1601 - 2000 см3</li>
+                                                <li data-type-car="B3">Легковий автомобіль - 2001 - 3000</li>
+                                                <li data-type-car="B4">Легковий автомобіль - більше 3000 см3</li>
+                                                <li data-type-car="B5">Легковий електрокар (окрім гібридних)</li>
+                                                <li data-type-car="C1">Грузовий автомобіль - до 2т</li>
+                                                <li data-type-car="C2">Грузовий автомобіль - більше 2т</li>
+                                                <li data-type-car="D1">Автобус - до 20 чоловік</li>
+                                                <li data-type-car="D2">Автобус - більше 20 чоловік</li>
+                                                <li data-type-car="E">Прицеп до грузового авто</li>
+                                                <li data-type-car="F">Прицеп до легкового авто</li>
+                                            </ul>
+                                        </div><!--dd-list-wrapper end here-->
+
+                                        <div class="parameter-five">
+                                            <label>Категорія контрагента</label>
+                                            <div class="dd-list-wrapper">
+                                                <input class="dd-hide-filed" type="text" readonly="readonly">
+                                                <div class="dd-arrow"></div>
+                                                <div class="dd-list-input">Оберіть...</div>
+                                                <ul class="dd-list type-of-cat-contagent">
+                                                    <li data-type-cat-contragent="NATURAL">Фізична особа</li>
+                                                    <li data-type-cat-contragent="LEGAL">Юридичина особа</li>
+                                                    <li data-type-cat-contragent="PRIVILEGED">Пільговик</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="parameter-three">
+                                            <label>Реєстрація власника авто</label>
+                                            <span class="privileges-wrapper">
+										<input type="checkbox" id="foreign">
+										<label for="foreign">Іноземна</label>
+								</span>
+
+                                            <input type="text" class="inpt-2 cities js-cities"
+                                                   placeholder="Введіть місто реєстрації власника">
+
+                                            <div class="city-result-list" id="cityResultList"></div>
+                                        </div>
+
+                                        <!-- // KUTSENKO -->
+                                        <div class="parameter-four">
+                                            <label>Тип реєстрації авто</label>
+                                            <span class="taxi-wrapper">
+                                            <input type="checkbox" id="taxi">
+                                            <label for="taxi">Таксі&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    </span>
+
+                                            <div class="dd-list-wrapper">
+                                                <input class="dd-hide-filed" type="text" readonly="readonly">
+                                                <div class="dd-arrow"></div>
+                                                <div class="dd-list-input">Оберіть...</div>
+                                                <ul class="dd-list type-of-registration">
+                                                    <li data-type-reg="PERMANENT_WITHOUT_OTK">Постійна реєстрація (без
+                                                        ОТК)
+                                                    </li>
+                                                    <li data-type-reg="PERMANENT_WITH_OTK">Постійна реєстрація (з ОТК)
+                                                    </li>
+                                                    <li data-type-reg="TEMPORARY">Тимчасова реєстрація</li>
+                                                    <li data-type-reg="TEMPORARY_ENTRANCE">Тимчасовий в'їзд</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="parameter-seven">
+                                            <label>Строк дії</label>
+                                            <div class="dd-list-wrapper">
+                                                <input class="dd-hide-filed" type="text" readonly="readonly">
+                                                <div class="dd-arrow"></div>
+                                                <div class="dd-list-input">1 рік</div>
+                                                <ul class="dd-list validity">
+                                                    <li data-validity="15" data-validity-period="d">15 днів</li>
+                                                    <li data-validity="1" data-validity-period="m">1 місяць</li>
+                                                    <li data-validity="2" data-validity-period="m">2 місяці</li>
+                                                    <li data-validity="3" data-validity-period="m">3 місяці</li>
+                                                    <li data-validity="4" data-validity-period="m">4 місяці</li>
+                                                    <li data-validity="5" data-validity-period="m">5 місяців</li>
+                                                    <li data-validity="6" data-validity-period="m">6 місяців</li>
+                                                    <li data-validity="7" data-validity-period="m">7 місяців</li>
+                                                    <li data-validity="8" data-validity-period="m">8 місяців</li>
+                                                    <li data-validity="9" data-validity-period="m">9 місяців</li>
+                                                    <li data-validity="10" data-validity-period="m">10 місяців</li>
+                                                    <li data-validity="11" data-validity-period="m">11 місяців</li>
+                                                    <li data-validity="1" data-validity-period="y">1 рік</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="parameter-six">
+                                            <label>Термін дії полісу</label>
+                                            <div class="row">
+                                                <div class="vc_col-xs-6">
+                                                    <div class="inpt-date-wrapepr inpt-date-from">
+                                                        <input class="inpt-2 bg-calendar" id="termStart" placeholder="дд.мм.рррр" type="text"
+                                                        autocomplete="off" value="<?php echo $dateFrom; ?>">
+                                                    </div>
+                                                </div>
+                                                <div class="vc_col-xs-6">
+                                                    <div class="inpt-date-wrapepr inpt-date-to">
+                                                        <input class="inpt-2 bg-calendar" id="termEnd" type="text"
+                                                               readonly="readonly" value="<?php echo $dateTo; ?>"
+                                                               disabled="disabled">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button class="btn-1" id="goStepThreeCalc">Порівняти ціни</button>
+
+                                        <span class="go-back" id="goToNumber">Повернутись назад</span>
+
+                                    </div>
+                                </div><!--step-1 end here-->
+
+
+                                <div class="step-2">
+                                    <div class="row">
+                                        <div class="vc_col-lg-6">
+                                            <div class="step-2-title">Автомобіль</div>
+                                            <div class="step-2-text car"></div>
+                                        </div>
+                                        <div class="vc_col-lg-6">
+                                            <div class="step-2-title">Номер авто</div>
+                                            <div class="step-2-text car-number"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="vc_col-lg-6">
+                                            <div class="step-2-title">VIN</div>
+                                            <div class="step-2-text vin"></div>
+                                        </div>
+                                        <div class="vc_col-lg-6">
+                                            <div class="step-2-title">Категорія</div>
+                                            <div class="step-2-text car-cat"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-2-inner">
+
+                                        <label>Реєстрація авто</label>
+                                        <span class="privileges-wrapper">
+										<input type="checkbox" id="foreignCar">
+										<label for="foreignCar">Іноземна</label>
+								</span>
+                                        <input class="inpt-2 js-cities js-get-cities" id="get-cities" type="text"
+                                               placeholder="Введіть місто реєстрації">
+                                        <div class="city-result-list js-city-result-list"></div>
+
+                                        <div class="dateFrom-dateTo">
+                                            <label>Термін дії полісу</label>
+                                            <div class="row">
+                                                <div class="vc_col-xs-6">
+                                                    <div class="inpt-date-wrapepr inpt-date-from">
+                                                        <input class="inpt-2 bg-calendar" id="termStartSecond"
+                                                               type="text" autocomplete="off"
+                                                               value="<?php echo $dateFrom; ?>">
+                                                    </div>
+                                                </div>
+                                                <div class="vc_col-xs-6">
+                                                    <div class="inpt-date-wrapepr inpt-date-to">
+                                                        <input class="inpt-2 bg-calendar" id="termEndSecond" type="text"
+                                                               readonly="readonly" value="<?php echo $dateTo; ?>"
+                                                               disabled="disabled">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn-2" id="goStepThree">Далі</button>
+
+                                        <span class="go-back" id="goBack">Повернутись назад</span>
+                                    </div>
+                                </div><!--step-2 end here-->
+
+
+                                <div class="step-3">
+                                    <div class="row step-3-header">
+        

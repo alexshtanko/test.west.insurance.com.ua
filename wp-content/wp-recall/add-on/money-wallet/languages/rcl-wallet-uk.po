@@ -1,0 +1,428 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-24 15:37+0300\n"
+"PO-Revision-Date: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: uk_UA\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: history-payments.php:29 history-requests.php:31
+msgid "payment"
+msgstr "оплата"
+
+#: history-payments.php:30 history-requests.php:32
+msgid "payments"
+msgstr "платежі"
+
+#: history-payments.php:55
+msgid "No payments found."
+msgstr "Платежів не знайдено."
+
+#: history-payments.php:81
+msgid "Users"
+msgstr "Користувачі"
+
+#: history-payments.php:82 index.php:225
+msgid "Parish"
+msgstr "Доходи"
+
+#: history-payments.php:82 index.php:225
+msgid "Consumption"
+msgstr "Споживання"
+
+#: history-payments.php:83 index.php:226
+msgid "The rest"
+msgstr "Решта"
+
+#: history-payments.php:84 history-requests.php:100 index.php:161 index.php:227
+#: index.php:430
+msgid "Comment"
+msgstr "Коментар"
+
+#: history-payments.php:85 history-requests.php:101 index.php:426
+msgid "Date"
+msgstr "Дата"
+
+#: history-payments.php:92
+msgid "All history"
+msgstr "Вся історія"
+
+#: history-payments.php:205 history-payments.php:219 index.php:40
+msgid "Flow of funds"
+msgstr "Потік коштів"
+
+#: history-requests.php:58
+msgid "No orders found."
+msgstr "Не знайдено жодних замовлень."
+
+#: history-requests.php:84 history-requests.php:124 index.php:171
+msgid "Consideration"
+msgstr "Розгляд"
+
+#: history-requests.php:87 history-requests.php:117
+msgid "Made"
+msgstr "Зроблено"
+
+#: history-requests.php:97
+msgid "User"
+msgstr "Користувач"
+
+#: history-requests.php:98
+msgid "Amount request"
+msgstr "Сума запиту"
+
+#: history-requests.php:99 index.php:160 index.php:429
+msgid "Withdrawal amount"
+msgstr "Сума зняття"
+
+#: history-requests.php:102 index.php:162 index.php:431
+msgid "Status"
+msgstr "Статус"
+
+#: history-requests.php:109
+msgid "Payments history"
+msgstr "Історія платежів"
+
+#: history-requests.php:110
+msgid "All requests"
+msgstr "Усі запити"
+
+#: history-requests.php:120
+msgid "Reject"
+msgstr "Відхилити"
+
+#: history-requests.php:121
+msgid "Approve"
+msgstr "Затвердити"
+
+#: history-requests.php:129
+msgid "Delete"
+msgstr "Видалити"
+
+#: history-requests.php:156
+msgid "Filter by date"
+msgstr "Фільтр за датою"
+
+#: history-requests.php:158
+msgid "All dates"
+msgstr "Усі дати"
+
+#: history-requests.php:167
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: history-requests.php:311
+msgid "Payments"
+msgstr "Виплати"
+
+#: history-requests.php:324
+msgid "Requests history"
+msgstr "Запрошує історію"
+
+#: history-requests.php:332
+msgid "Filter"
+msgstr "Фільтр"
+
+#: index.php:25 index.php:98
+msgid "The transfer of funds"
+msgstr "Переказ коштів"
+
+#: index.php:26
+msgid "Transfer"
+msgstr "Передача"
+
+#: index.php:27
+msgid "Enter the transfer amount"
+msgstr "Введіть суму переказу"
+
+#: index.php:28
+msgid "Specify the number of"
+msgstr "Вкажіть кількість"
+
+#: index.php:29
+msgid "You seriously?"
+msgstr "Ви серйозно?"
+
+#: index.php:30
+msgid "Insufficient funds on personal account!"
+msgstr "Недостатньо коштів на особистий рахунок!"
+
+#: index.php:38 index.php:64 index.php:536
+msgid "Withdrawal"
+msgstr "Виведення"
+
+#: index.php:61
+msgid "Settings personal account"
+msgstr "Налаштування особистого рахунку"
+
+#: index.php:66
+msgid "Allow withdrawals?"
+msgstr "Дозволити зняття коштів?"
+
+#: index.php:70 index.php:103
+msgid "Not allowed"
+msgstr "Не дозволяється"
+
+#: index.php:70 index.php:103
+msgid "Allowed"
+msgstr "Дозволено"
+
+#: index.php:79
+msgid "Payment system which permitted withdrawal"
+msgstr "Платіжна система, яка дозволила зняти"
+
+#: index.php:81
+msgid ""
+"Specify comma-separated names of payment systems which the user can choose "
+"to withdraw funds"
+msgstr ""
+"Укажіть розділені комами назви платіжних систем, які користувач може вибрати "
+"для зняття коштів"
+
+#: index.php:83
+msgid "The percentage of Commission for withdrawal of funds"
+msgstr "Відсоток комісії за зняття коштів"
+
+#: index.php:85
+msgid "If nothing is specified, the withdrawal Commission is not charged"
+msgstr "Якщо нічого не вказано, комісія за відкликання не стягується"
+
+#: index.php:88
+msgid "Bring personal account in the advanced tab"
+msgstr "Перенесіть особистий рахунок на розширену вкладку"
+
+#: index.php:92
+msgid "No"
+msgstr "Немає"
+
+#: index.php:92
+msgid "Yes"
+msgstr "Так"
+
+#: index.php:100
+msgid "Transfer of funds between users"
+msgstr "Переказ коштів між користувачами"
+
+#: index.php:113
+msgid "Balance"
+msgstr "Balance"
+
+#: index.php:129
+msgid "Personal account of the user"
+msgstr "Особистий кабінет користувача"
+
+#: index.php:139
+msgid "The withdrawal request"
+msgstr "Запит на відкликання"
+
+#: index.php:157
+msgid "Date of request"
+msgstr "Дата запиту"
+
+#: index.php:158 index.php:416
+msgid "The amount of the request"
+msgstr "Сума запиту"
+
+#: index.php:159 index.php:428
+msgid "The Commission"
+msgstr "Комісія"
+
+#: index.php:172 index.php:441
+msgid "cancel"
+msgstr "скасувати"
+
+#: index.php:182
+msgid "Payment system"
+msgstr "Платіжна система"
+
+#: index.php:183
+msgid "The number of purse"
+msgstr "Кількість гаманця"
+
+#: index.php:184
+#, php-format
+msgid "Withdrawal amount (Commission for withdrawal %s)"
+msgstr "Сума зняття (комісія за зняття коштів %s)"
+
+#: index.php:185
+msgid "Send enquiry"
+msgstr "Надіслати запит"
+
+#: index.php:220
+msgid "The history of balance changes"
+msgstr "Історія змін балансу"
+
+#: index.php:221
+msgid "The account balance"
+msgstr "Залишок на рахунку"
+
+#: index.php:260
+msgid "You haven`t had the movements of funds on the personal account"
+msgstr "Ви не мали грошових коштів на особовому рахунку"
+
+#: index.php:276
+msgid "Make transfer"
+msgstr "Зробити переказ"
+
+#: index.php:345
+msgid "The transfer of funds to the user"
+msgstr "Переказ коштів користувачеві"
+
+#: index.php:352
+msgid "The funds coming from the user"
+msgstr "Кошти, що надходять від користувача"
+
+#: index.php:354
+msgid "Money transfer"
+msgstr "Грошовий переказ"
+
+#: index.php:356
+#, php-format
+msgid ""
+"Into your personal account with the website \"%s\" was transferred from "
+"another user"
+msgstr ""
+"У ваш особистий обліковий запис на веб-сайті \"%s\" було переведено від "
+"іншого користувача"
+
+#: index.php:357
+#, php-format
+msgid "The user %s has transferred to your personal account %s"
+msgstr "Користувач %s перейшов до вашого особистого облікового запису %s"
+
+#: index.php:362
+msgid "The funds were successfully transferred to the account of that user"
+msgstr "Кошти були успішно перераховані на рахунок цього користувача"
+
+#: index.php:390
+msgid "Lock means on request"
+msgstr "Блокування означає за запитом"
+
+#: index.php:413
+msgid "Request the withdrawal"
+msgstr "Попросити відкликання"
+
+#: index.php:415
+msgid "Request data"
+msgstr "Запит даних"
+
+#: index.php:417 index.php:477 index.php:519
+msgid "Account number"
+msgstr "Номер рахунку"
+
+#: index.php:423
+msgid "The withdrawal request is well formed"
+msgstr "Запит на відкликання добре сформований"
+
+#: index.php:427
+msgid "Sum"
+msgstr "Сума"
+
+#: index.php:440
+msgid "Processing"
+msgstr "Обробка"
+
+#: index.php:470
+msgid "Refund with lock on request"
+msgstr "Відшкодування за допомогою блокування за запитом"
+
+#: index.php:472 index.php:487
+msgid "The withdrawal request was cancelled"
+msgstr "Запит на відкликання скасовано"
+
+#: index.php:474
+msgid "Your request for withdrawal has been rejected"
+msgstr "Ваш запит на відкликання відхилено"
+
+#: index.php:475 index.php:517
+msgid "Information about the transfer"
+msgstr "Інформація про передачу"
+
+#: index.php:476 index.php:518
+msgid "The amount of the transfer"
+msgstr "Сума переказу"
+
+#: index.php:478
+msgid "The blocked funds were returned to your personal account"
+msgstr "Заблоковані кошти повернуті на ваш особистий рахунок"
+
+#: index.php:512
+msgid "For a withdrawal to"
+msgstr "Для виводу до"
+
+#: index.php:514 index.php:526
+msgid "The request for withdrawal is made"
+msgstr "Прохання про відкликання подається"
+
+#: index.php:516
+msgid "Your request for withdrawal has been approved"
+msgstr "Ваш запит на відкликання затверджено"
+
+#: index.php:541
+msgid "History"
+msgstr "Історія"
+
+msgid "ОК"
+msgstr "ОК"
+
+msgid "Specify the amount of transfer!"
+msgstr "Вкажіть суму переказу!"
+
+msgid "Are you sure?"
+msgstr "Ви впевненi?"
+
+msgid "Your account has insufficient funds!"
+msgstr "На вашому рахунку недостатньо коштів!"
+
+msgid "Specify the number of purse!"
+msgstr "Вкажіть номер гаманця!"
+
+msgid "Management of withdrawal requests"
+msgstr "Управління запитами на відкликання коштiв"
+
+msgid "Action"
+msgstr "Дія"
+
+msgid "Apply"
+msgstr "Застосувати"
+
+msgid "To balance user"
+msgstr "Щоб збалансувати користувача"
+
+msgid "At the moment, the query is no"
+msgstr "На даний момент запиту немає"
+
+msgid "Settings background"
+msgstr "Налаштування фону"
+
+msgid "Background private account"
+msgstr "Фон приватного облікового запису"
+
+msgid "Profile field for background"
+msgstr "Поле профілю для фону"
+
+msgid ""
+"Specify the type of profile field \"File\" to through it could set the "
+"background image for your personal account"
+msgstr ""
+"Вкажіть тип поля профілю \"Файл\", щоб через нього можна було встановити "
+"фонове зображення для вашого особистого облікового запису"

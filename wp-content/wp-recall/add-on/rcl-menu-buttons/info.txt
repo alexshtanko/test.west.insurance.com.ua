@@ -1,0 +1,7 @@
+Name: Rcl Menu Buttons;
+Version: 1.2.1;
+Support Core: 16.17.0;
+ItemID: 10355;
+Description: Выводим кнопки входа/регистрации и личный кабинет/выход плагина Wp-Recall в действующих меню сайта;
+Author: Плечев Андрей;
+Author URI: http://codeseller.ru/;

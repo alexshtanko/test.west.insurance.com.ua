@@ -1,0 +1,319 @@
+.hidden{
+    display: none;
+}
+input.inpt-5.inpt-error{
+    border-color: #ff0000 !important;
+    background: rgba(255, 0, 0, .1) !important;
+}
+.medical-form .inpt-5{
+    border: 2px solid #ff7d00 !important
+}
+
+.inpt-wrapper{
+    position: relative;
+}
+.medical-btn-wrapper{
+    position: relative;
+    max-width: 370px;
+    margin: 25px auto 0;
+}
+
+.medical-form .dd-list-input{
+    height: 45px;
+
+}
+.medical-form .dd-hide-filed{
+    height: 15px !important;
+}
+
+.medical-form .dd-list-wrapper .dd-list{
+    top: 42px !important;
+}
+
+label.inpt-error{
+    position: absolute;
+    /* top: 22px; */
+    top: 85px;
+    /* right: 0; */
+    left: 0;
+    font-size: 10px;
+    color: #ff0000;
+    background: #ffffff;
+    padding: 0 0 0 5px;
+    line-height: 10px;
+    min-width: 190px;
+    /* text-align: right; */
+    text-align: left;
+}
+
+.dd-list-wrapper label.inpt-error{
+    /* top: -14px; */
+    top: 50px;
+}
+
+.series-wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+.message-danger{
+    background: none;
+    color: red;
+}
+.message-ok{
+    color: green;
+}
+
+.insurance-form-message{
+    /* max-width: 480px; */
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: center;
+}
+.insurance-form-message span{
+    display: block;
+}
+
+.insurance-vait{
+    text-align: center;
+
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year{
+    display: inline-block !important;
+}
+
+
+.inpt-2.bg-calendar, .inpt-5.bg-calendar{
+    background: #f3f5fe !important;
+    cursor: auto !important;
+}
+.vc_col-lg-4 img.ui-datepicker-trigger, .vc_col-lg-2 img.ui-datepicker-trigger{
+    right: 12px !important;
+    position: absolute;
+    top: 44px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.insurance-data-field span{
+    font-weight: bold;
+}
+
+.insurance-go-prev-step{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 0%;
+}
+
+.insurance-go-prev-step:hover{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 100% !important;
+}
+
+.insurance-form-last-step{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.get-new-medical-order{
+    /* float: left; */
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 0%;
+}
+.get-new-medical-order:hover{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 100% !important;
+}
+
+.download-medical-order{
+    float: right;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 0%;
+}
+
+.download-medical-order:hover{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding: 7px 32px 7px;
+    margin-bottom: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 50px;
+    font-family: inherit;
+    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+    background-size: 300%,1px;
+    background-position: 100% !important;
+}
+
+.label-required{
+    position: relative;
+  }
+  .label-required:before{
+    content: '*';
+    color: red;
+    font-size: 18px;
+    margin-right: 3px;
+  }
+
+
+  .coefficient-message{
+      color: red;
+  }
+
+  .ui-widget-shadow{
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4) !important;
+}
+
+
+#addInserer:disabled,
+#addInserer[disabled]{
+    background: red !important;
+    cursor: help;
+}

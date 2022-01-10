@@ -1,0 +1,359 @@
+/*
+Theme Name: Seofy
+Theme URI: http://seofy.webgeniuslab.net/
+Author: WebGeniusLab
+Author URI: http://webgeniuslab.net/
+Description: WebGeniusLab team presents absolutely fresh and powerful WordPress theme. It combines new technologies and functional design that helps to showcase your content in better way. This WordPress theme is developed with attention to details, so you can create effective presentation of a website easily. Enjoy building web pages with our product!
+Version: 1.3.1
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: seofy
+*/
+
+
+.go-to-manager-page-wrapper{
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 1001;
+}
+.go-to-manager-page-wrapper .wgl_col-12{
+	position: relative;
+}
+.go-to-manager-page{
+	position: absolute;
+	right: 10px;
+	top: 100px;
+	z-index: 50;
+	background: #ff7d00;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 38px;
+	color: #ffffff !important;
+	cursor: pointer;
+}
+
+.ui-widget-shadow{
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4) !important;
+}
+
+.ui-tooltip.ui-corner-all.ui-widget-shadow.ui-widget.ui-widget-content{
+  left: 50% !important;
+  width: 320px;
+  margin-left: -160px;
+  background: #ffffff;
+  z-index: 101;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.page-id-2979 .ui-tooltip.ui-corner-all.ui-widget-shadow.ui-widget.ui-widget-content,
+.page-id-2930 .ui-tooltip.ui-corner-all.ui-widget-shadow.ui-widget.ui-widget-content{
+	display: none !important;
+}
+
+.position-relative{
+	position: relative;
+}
+
+
+
+
+
+/*ЛК Modal*/
+@media(max-width: 960px){
+	#subtab-contractsInfo.rcl-subtab-content{
+		overflow: scroll;
+	}
+}
+
+#TB_window.thickbox-loading{
+	width: 300px !important;
+	margin-left: -150px !important;
+	margin-top: -255px !important;
+}
+
+#TB_window #TB_ajaxContent{
+	width: 100% !important;
+	height: 480px !important;
+}
+
+@media(min-width: 768px){
+	#TB_window.thickbox-loading{
+		width: 630px !important;
+		margin-left: -315px !important;
+		margin-top: -295px !important; 
+	}
+	#TB_window #TB_ajaxContent{
+		height: 545px !important;
+	}
+}
+
+
+@media (orientation: landscape) and (max-width: 960px) {
+	#TB_window.thickbox-loading{
+		width: 560px !important;
+		margin-left: -280px !important;
+		margin-top: -155px !important;
+	}
+	#TB_window #TB_ajaxContent{
+		height: 280px !important;
+	}
+}
+
+
+
+/*COVID FORM*/
+.covid-form-wrapper,.medical-form-wrapper{
+	max-width: 480px;
+	/* min-height: 480px; */
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+.covid-form-wrapper .dd-list-input, .medical-form-wrapper .dd-list-input{
+	overflow: hidden;
+}
+.covid-form-wrapper h3, .medical-form-wrapper h3{
+	margin-bottom: 25px;
+	text-align: center;
+}
+.covid-form-wrapper .inpt-2, .medical-form-wrapper .inpt-2{
+	padding: 0 10px !important;
+}
+.covid-form-wrapper .insurance-price, .medical-form-wrapper .insurance-price{
+	font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+}
+.covid-form .step-3-results-item, .medical-form .step-3-results-item{
+	padding: 0 0 15px 0;
+}
+
+.epol-modal-wrapper{
+	position: fixed;
+	left: -10000px;
+	/* left: 0; */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .75);
+	/* width: 100%;
+	height: 100%; */
+	
+	z-index: 999;
+	opacity: 0;
+	display: none;
+	transition: opacity .2s linear;
+	/* overflow: scroll; */
+	/* padding: 50px 0; */
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+.epol-modal-wrapper.modal-open{
+	left: 0;
+	opacity: 1;
+	display: block;
+	/* flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+}
+body.modal-open{
+	overflow: hidden;
+}
+.epol-modal-wrapper-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow-y: scroll; */
+	
+	padding: 50px 0;
+}
+.epol-modal{
+	width: 320px;
+	/* margin: 0 15px; */
+	background: #ffffff;
+	box-sizing: border-box;
+	padding: 15px;
+	/* margin-top: 50px;
+	margin-bottom: 50px; */
+	position: relative;
+	z-index: 1000;
+}
+@media(min-width: 768px){
+	.epol-modal{
+		width: 480px;
+	}
+}
+.epol-modal-header{
+	text-align: center;
+	position: relative;
+	padding: 0 20px;
+}
+.epol-modal-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	/* background: red; */
+	cursor: pointer;
+}
+.epol-modal-close:before{
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: #ff7d00;
+	display: block;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+}
+.epol-modal-close:after{
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: #ff7d00;
+	display: block;
+	transform: rotate(-45deg);
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+}
+.epol-modal-body label{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.epol-modal-body .btn-1{
+	display: inline-block;
+	margin-top: 25px;
+}
+.epol-modal-body .btn-wrapper{
+	text-align: center;
+}
+.covid-customer-form-message, .medical-customer-form-message{
+	color: green;
+	text-align: center;
+}
+
+.InsuranceAmountText {
+	color: black;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/*SOS table*/
+.sos-nav{
+	color: #DF1F23!important; 
+	font-weight: 800;
+}
+.sos-table p{
+	margin: 0;
+	padding: 0;
+}
+.sos-table a{
+	color: #ff7d00;
+}
+.sos-table tr td{
+	vertical-align: middle;
+}
+.sos-table tr td:first-child{
+	width: 25px;
+	/* background: red; */
+	text-align: center;
+}
+
+#tab-percents_14 .companyName {
+	font-size: 16px;
+}
+
+#tab-percents_14 .company {
+	margin-bottom: 10px;
+}
+
+#tab-percents_14 .company .franchise {
+	margin-left: 30px;
+}
+
+
+
+/*Report*/
+.excel-reports{
+	padding: 0 15px;
+}
+.excel-reports label{
+	display: inline;
+}
+.excel-reports span{
+	width: 100%;
+	display: block;
+}
+
+@media (min-width: 992px){
+
+	.excel-reports span{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 25%;
+
+	}
+	.excel-reports span input{
+		margin-left: 10px !important;
+	}
+
+	.excel-reports label{
+		display: inline;
+	}
+
+	.excel-reports form{
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/*Partner form*/
+.partner-form-wrapper{
+	font-family: Montserrat !important;
+	padding: 25px 0 0 0;
+}
+.partner-form-wrapper label{
+	font-family: Montserrat !important;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000000 !important;
+	line-height: 14px;
+}
+.partner-form-wrapper input[type="submit"]{
+	margin: 10px auto;
+	display: block;
+}
+.btn-send-1{
+	margin: 10px auto;
+	display: block;
+}
+.emodal-close:before{
+	content: '';
+	width: 16px;
+	height: 2px;
+	background: #ff7d00;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 12px;
+	left: 9px;
+}
+.emodal-close:after{
+	content: '';
+	width: 16px;
+	height: 2px;
+	background: #ff7d00;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 12px;
+	left: 9px;
+}

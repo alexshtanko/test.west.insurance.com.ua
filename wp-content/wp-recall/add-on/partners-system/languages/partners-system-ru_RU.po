@@ -1,0 +1,629 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2017-08-28 12:16+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Partner_Class.php:89
+msgid "Accrual of funds for the affiliate program"
+msgstr "Начисление средств по партнерской программе"
+
+#: Partner_Class.php:112
+msgid "You have a new referral!"
+msgstr "У вас появился новый реферал!"
+
+#: Partner_Class.php:115
+#, php-format
+msgid "Congratulations! On the website \"%s\" you have a new referral"
+msgstr "Поздравляем! На сайте \"%s\" у вас появился новый реферал"
+
+#: Partner_Class.php:116
+msgid "Information about referrals"
+msgstr "Информация о реферале"
+
+#: Partner_Class.php:117
+msgid "Name"
+msgstr "Имя"
+
+#: Partner_Class.php:118
+msgid "Email Реферала"
+msgstr ""
+
+#: Partner_Class.php:282 admin-pages.php:134 admin-pages.php:320 index.php:142
+#: index.php:263
+msgid "Level"
+msgstr "Уровень"
+
+#: admin-pages.php:11 admin-pages.php:26
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin-pages.php:12
+msgid "Partners and Referrals"
+msgstr "Партнеры и рефералы"
+
+#: admin-pages.php:13
+msgid "Promotion"
+msgstr "Поощрения"
+
+#: admin-pages.php:36
+msgid "View affiliate links"
+msgstr "Вид партнерской ссылки"
+
+#: admin-pages.php:43
+msgid "Home page"
+msgstr "Главная страница"
+
+#: admin-pages.php:55
+msgid "The current reference"
+msgstr "Текущая страница"
+
+#: admin-pages.php:56
+msgid "The appointment of the partner when registering"
+msgstr "Назначение партнера при регистрации"
+
+#: admin-pages.php:57
+msgid "If registration took place without the affiliate link"
+msgstr "Если регистрация прошла без перехода по партнерской ссылке"
+
+#: admin-pages.php:60 admin-pages.php:67 admin-pages.php:72
+msgid "Included"
+msgstr "Включено"
+
+#: admin-pages.php:62
+msgid "Specify the ID of the partner to which you will attach a new referral."
+msgstr "Укажите идентификатор партнера для прикрепления нового реферала"
+
+#: admin-pages.php:63
+msgid "If empty, the partner is randomly assigned."
+msgstr "Если пусто, то партнер будет назначен случайно"
+
+#: admin-pages.php:65
+msgid "Reassign referrals when a user is deleted"
+msgstr "Переназначение рефералов при удалении пользователя"
+
+#: admin-pages.php:68
+msgid ""
+"If enabled, the referrals of the user to remove attached to the partner "
+"whose referral it is"
+msgstr ""
+"Если включено, то рефералы удаляемого пользователя прикрепляются к партнеру "
+"чьим рефералом он является"
+
+#: admin-pages.php:70
+msgid "The link to the partner profile"
+msgstr "Ссылка на партнера в профиле"
+
+#: admin-pages.php:73
+msgid ""
+"If enabled, the referral system also displays link to the profile of the "
+"inviting partner"
+msgstr ""
+"Если включено, то в профиле пользователя отображается ссылка на его партнера"
+
+#: admin-pages.php:75
+msgid "Ограничение кол-ва рефералов"
+msgstr ""
+
+#: admin-pages.php:77
+msgid ""
+"Опция ограничивает количество прямых рефералов для партнера, если пусто, то "
+"без ограничений"
+msgstr ""
+
+#: admin-pages.php:80
+msgid "The number of levels affiliate program"
+msgstr "Количество уровней партнерской программы"
+
+#: admin-pages.php:107 admin-pages.php:292
+msgid "Registration"
+msgstr "Регистрация"
+
+#: admin-pages.php:108 admin-pages.php:293
+msgid "Completion of a personal account"
+msgstr "Пополнение личного счета"
+
+#: admin-pages.php:109 admin-pages.php:294
+msgid "Order payment"
+msgstr "Оплата заказа"
+
+#: admin-pages.php:112
+msgid "No"
+msgstr "Нет"
+
+#: admin-pages.php:113
+msgid "Points"
+msgstr "Баллы"
+
+#: admin-pages.php:114
+msgid "Payment"
+msgstr "Платеж"
+
+#: admin-pages.php:115
+msgid "Interest"
+msgstr "Проценты"
+
+#: admin-pages.php:118
+msgid "Promotion referral register"
+msgstr "Поощрение регистрируемому рефералу"
+
+#: admin-pages.php:119 admin-pages.php:139
+msgid "Type"
+msgstr "Тип"
+
+#: admin-pages.php:128 admin-pages.php:146
+msgid "Size"
+msgstr "Размер"
+
+#: admin-pages.php:130
+msgid "Promote partner referral for action"
+msgstr "Поощрение партнеру за действия реферала"
+
+#: admin-pages.php:156
+msgid "Save the settings"
+msgstr "Сохранить настройки"
+
+#: admin-pages.php:219 admin-pages.php:355
+msgid "Cancellation of reward for referral"
+msgstr "Списание поощрения за реферала"
+
+#: admin-pages.php:259
+msgid "Track produced rewards partners"
+msgstr "Учет произведенных выплат партнерам"
+
+#: admin-pages.php:262 admin-pages.php:407
+msgid "Search"
+msgstr "Поиск"
+
+#: admin-pages.php:264 admin-pages.php:409
+msgid "Search user"
+msgstr "Поиск пользователя"
+
+#: admin-pages.php:271
+msgid "Action"
+msgstr "Действие"
+
+#: admin-pages.php:272 admin-pages.php:438
+msgid "Delete"
+msgstr "Удалить"
+
+#: admin-pages.php:274
+msgid "Apply"
+msgstr "Применить"
+
+#: admin-pages.php:282 admin-pages.php:417
+msgid "Partner"
+msgstr "Партнер"
+
+#: admin-pages.php:283 admin-pages.php:418 index.php:127 index.php:247
+msgid "Referral"
+msgstr "Реферал"
+
+#: admin-pages.php:284
+msgid "Event:Type promotion"
+msgstr "Событие:Тип поощрения"
+
+#: admin-pages.php:285 index.php:128 index.php:248
+msgid "Size promotion"
+msgstr "Размер поощрения"
+
+#: admin-pages.php:286 admin-pages.php:420 index.php:86 index.php:129
+#: index.php:219 index.php:249
+msgid "Date and time"
+msgstr "Дата и время"
+
+#: admin-pages.php:300
+msgid "Reputation"
+msgstr "Репутация"
+
+#: admin-pages.php:301
+msgid "Lump sum payment"
+msgstr "Единовременный платеж"
+
+#: admin-pages.php:302
+msgid "A percentage of purchases referral"
+msgstr "Процент от оплаты реферала"
+
+#: admin-pages.php:306 index.php:136 index.php:256
+msgid "points"
+msgstr "баллов"
+
+#: admin-pages.php:310
+msgid "Unknown event"
+msgstr "Неизв. событие"
+
+#: admin-pages.php:321 index.php:143 index.php:264
+msgid "Sum order"
+msgstr "Сумма заказа"
+
+#: admin-pages.php:404
+msgid "Statistics activity partners"
+msgstr "Статистика активности партнеров"
+
+#: admin-pages.php:419 index.php:85 index.php:218
+msgid "URL"
+msgstr ""
+
+#: index.php:28
+msgid "You're a partner!"
+msgstr "Ты - партнер!"
+
+#: index.php:37 index.php:213
+msgid "Attached referrals"
+msgstr "Прикрепленные рефералы"
+
+#: index.php:45
+msgid "Charges"
+msgstr "Начисления"
+
+#: index.php:59
+msgid "Was referrals"
+msgstr "Зарегистрированные рефералы"
+
+#: index.php:64 index.php:197
+msgid "Your upstream partner"
+msgstr "Ваш вышестоящий партнер"
+
+#: index.php:67 index.php:200 widgets.php:40
+msgid "Your affiliate link"
+msgstr "Ваша партнерская ссылка"
+
+#: index.php:72
+msgid "You have not yet registered referrals"
+msgstr "У вас пока нет зарегистрированных рефералов"
+
+#: index.php:83 index.php:217
+msgid "Your referral"
+msgstr "Ваш реферал"
+
+#: index.php:84
+msgid "Number of referrals"
+msgstr "Кол-во рефералов"
+
+#: index.php:110 index.php:243
+msgid "Statistics of rewards"
+msgstr "Статистика поощрений"
+
+#: index.php:115
+msgid "You didn`t get rewards for the actions of your referrals"
+msgstr "У вас пока нет поощрений за действия рефералов"
+
+#: index.php:274
+msgid "You have no referrals"
+msgstr "У вас пока нет рефералов"
+
+#: widgets.php:17 widgets.php:19 widgets.php:43 widgets.php:68
+msgid "The last referrals"
+msgstr "Последние рефералы"
+
+#: widgets.php:48
+msgid "Complete statistics"
+msgstr "Полная статистика"
+
+#: widgets.php:51
+msgid "You have not invited anyone."
+msgstr "Вы еще никого не пригласили"
+
+#: widgets.php:71
+msgid "Title"
+msgstr "Заголовок"
+
+#: widgets.php:75
+msgid "The number of referrals"
+msgstr "Кол-во рефералов"
+
+#~ msgid "payment"
+#~ msgstr "платеж"
+
+#~ msgid "payments"
+#~ msgstr "платежи"
+
+#~ msgid "No payments found."
+#~ msgstr "Платежи не найдены"
+
+#~ msgid "Users"
+#~ msgstr "Пользователи"
+
+#~ msgid "Parish"
+#~ msgstr "Приход"
+
+#~ msgid "Consumption"
+#~ msgstr "Расход"
+
+#~ msgid "The rest"
+#~ msgstr "Остаток"
+
+#~ msgid "Comment"
+#~ msgstr "Комментарий"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "All history"
+#~ msgstr "Вся история"
+
+#~ msgid "Flow of funds"
+#~ msgstr "Движение средств"
+
+#~ msgid "No orders found."
+#~ msgstr "Заказы не найдены"
+
+#~ msgid "Consideration"
+#~ msgstr "Рассмотрение"
+
+#~ msgid "Made"
+#~ msgstr "Произведен"
+
+#~ msgid "User"
+#~ msgstr "Пользователь"
+
+#~ msgid "Amount request"
+#~ msgstr "Сумма запроса"
+
+#~ msgid "Withdrawal amount"
+#~ msgstr "Сумма вывода"
+
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#~ msgid "Payments history"
+#~ msgstr "История платежей"
+
+#~ msgid "All requests"
+#~ msgstr "Все запросы"
+
+#~ msgid "Reject"
+#~ msgstr "Отклонить"
+
+#~ msgid "Approve"
+#~ msgstr "Одобрить"
+
+#~ msgid "Filter by date"
+#~ msgstr "Фильтр по дате"
+
+#~ msgid "All dates"
+#~ msgstr "Все даты"
+
+#~ msgid "Payments"
+#~ msgstr "Платежи"
+
+#~ msgid "Requests history"
+#~ msgstr "История запросов"
+
+#~ msgid "Filter"
+#~ msgstr "Фильтр"
+
+#~ msgid "The transfer of funds"
+#~ msgstr "Перевод средств"
+
+#~ msgid "Transfer"
+#~ msgstr "Перевод"
+
+#~ msgid "Enter the transfer amount"
+#~ msgstr "Укажите сумму перевода"
+
+#~ msgid "Specify the number of"
+#~ msgstr "Укажите число"
+
+#~ msgid "You seriously?"
+#~ msgstr "Вы уверены?"
+
+#~ msgid "Insufficient funds on personal account!"
+#~ msgstr "Недостаточно средств на личном счету!"
+
+#~ msgid "Withdrawal"
+#~ msgstr "Вывод средств"
+
+#~ msgid "Settings personal account"
+#~ msgstr "Настройки личного счета"
+
+#~ msgid "Allow withdrawals?"
+#~ msgstr "Разрешить снятие?"
+
+#~ msgid "Not allowed"
+#~ msgstr "Не разрешать"
+
+#~ msgid "Allowed"
+#~ msgstr "Разрешить"
+
+#~ msgid "Payment system which permitted withdrawal"
+#~ msgstr "Платежная система которой разрешен вывод средств"
+
+#~ msgid ""
+#~ "Specify comma-separated names of payment systems which the user can "
+#~ "choose to withdraw funds"
+#~ msgstr ""
+#~ "Укажите через запятую названия платежных систем, которые пользователь "
+#~ "может выбрать для вывода средств"
+
+#~ msgid "The percentage of Commission for withdrawal of funds"
+#~ msgstr "Процент комиссии за вывод средств"
+
+#~ msgid "If nothing is specified, the withdrawal Commission is not charged"
+#~ msgstr "Если ничего не указано, то при выводе средств комиссия не взимается"
+
+#~ msgid "Bring personal account in the advanced tab"
+#~ msgstr "Вывод личного счета во вкладке дополнения"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "Transfer of funds between users"
+#~ msgstr "Перевод средств между пользователями"
+
+#~ msgid "Balance"
+#~ msgstr "Баланс"
+
+#~ msgid "Personal account of the user"
+#~ msgstr "Личный счет пользователя"
+
+#~ msgid "The withdrawal request"
+#~ msgstr "Запрос на получение денег"
+
+#~ msgid "Date of request"
+#~ msgstr "Дата запроса"
+
+#~ msgid "The amount of the request"
+#~ msgstr "Сумма запроса"
+
+#~ msgid "The Commission"
+#~ msgstr "Комиссия"
+
+#~ msgid "cancel"
+#~ msgstr "отмена"
+
+#~ msgid "Payment system"
+#~ msgstr "Платежная система"
+
+#~ msgid "The number of purse"
+#~ msgstr "Номер кошелька"
+
+#~ msgid "Withdrawal amount (Commission for withdrawal %s)"
+#~ msgstr "Сумма на вывод (Комиссия при выводе %s)"
+
+#~ msgid "Send enquiry"
+#~ msgstr "Отправить запрос"
+
+#~ msgid "The history of balance changes"
+#~ msgstr "История изменения баланса"
+
+#~ msgid "The account balance"
+#~ msgstr "Остаток на счете"
+
+#~ msgid "You haven`t had the movements of funds on the personal account"
+#~ msgstr "У вас не было движений средств на лицевом счете"
+
+#~ msgid "Make transfer"
+#~ msgstr "Сделать перевод"
+
+#~ msgid "The transfer of funds to the user"
+#~ msgstr "Перевод средств пользователю"
+
+#~ msgid "The funds coming from the user"
+#~ msgstr "Денежные средства, поступающие от пользователя"
+
+#~ msgid "Money transfer"
+#~ msgstr "Денежный перевод"
+
+#~ msgid ""
+#~ "Into your personal account with the website \"%s\" was transferred from "
+#~ "another user"
+#~ msgstr ""
+#~ "На ваш личный счет внутри сайта \"%s\" поступили средства от другого "
+#~ "пользователя"
+
+#~ msgid "The user %s has transferred to your personal account %s"
+#~ msgstr "Пользователь %s произвел перевод средств на ваш личный счет %s"
+
+#~ msgid "The funds were successfully transferred to the account of that user"
+#~ msgstr "Средства были успешно перечислены на счет этого пользователя"
+
+#~ msgid "Lock means on request"
+#~ msgstr "Блокировка средств по запросу на вывод"
+
+#~ msgid "Request the withdrawal"
+#~ msgstr "Запрос на вывод средств"
+
+#~ msgid "Request data"
+#~ msgstr "Данные запроса"
+
+#~ msgid "Account number"
+#~ msgstr "Номер счета"
+
+#~ msgid "The withdrawal request is well formed"
+#~ msgstr "Запрос на снятие денег сформирован"
+
+#~ msgid "Sum"
+#~ msgstr "Сумма"
+
+#~ msgid "Processing"
+#~ msgstr "Обработка"
+
+#~ msgid "Refund with lock on request"
+#~ msgstr "Возврат средств с блокировки по запросу"
+
+#~ msgid "The withdrawal request was cancelled"
+#~ msgstr "Запрос на вывод средств был отменен"
+
+#~ msgid "Your request for withdrawal has been rejected"
+#~ msgstr "Ваш запрос на вывод средств был отклонен"
+
+#~ msgid "Information about the transfer"
+#~ msgstr "Информация о переводе"
+
+#~ msgid "The amount of the transfer"
+#~ msgstr "Сумма перевода"
+
+#~ msgid "The blocked funds were returned to your personal account"
+#~ msgstr "Заблокированные средства были возвращены на ваш личный счет"
+
+#~ msgid "For a withdrawal to"
+#~ msgstr "Вывод средств на счет"
+
+#~ msgid "The request for withdrawal is made"
+#~ msgstr "Запрос на вывод сделан"
+
+#~ msgid "Your request for withdrawal has been approved"
+#~ msgstr "Ваш запрос на вывод средств был одобрен"
+
+#~ msgid "History"
+#~ msgstr "История"
+
+#~ msgid "ОК"
+#~ msgstr "ОК"
+
+#~ msgid "Specify the amount of transfer!"
+#~ msgstr "Укажите сумму перевода!"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Вы уверены?"
+
+#~ msgid "Your account has insufficient funds!"
+#~ msgstr "На Вашем счете недостаточно средств!"
+
+#~ msgid "Specify the number of purse!"
+#~ msgstr "Укажите номер кошелька!"
+
+#~ msgid "Management of withdrawal requests"
+#~ msgstr "Управление запросами на снятие"
+
+#~ msgid "To balance user"
+#~ msgstr "К балансу пользователя"
+
+#~ msgid "At the moment, the query is no"
+#~ msgstr "На данный момент запросов нет"
+
+#~ msgid "Settings background"
+#~ msgstr "Настройки фона"
+
+#~ msgid "Background private account"
+#~ msgstr "Фон личного кабинета"
+
+#~ msgid "Profile field for background"
+#~ msgstr "Поле профиля для фона"
+
+#~ msgid ""
+#~ "Specify the type of profile field \"File\" to through it could set the "
+#~ "background image for your personal account"
+#~ msgstr ""
+#~ "Выберите поле профиля типа \"Файл\" и укажите его для установки фонового "
+#~ "изображения в личном кабинете"

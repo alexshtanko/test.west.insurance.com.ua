@@ -1,0 +1,45 @@
+09:04:41 Fatal Error: Uncaught ArgumentCountError: Too few arguments to function Insurance_Class::render_statuses(), 1 passed in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php on line 58 and exactly 5 expected in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+Stack trace:
+#0 /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php(58): Insurance_Class->render_statuses(Array)
+#1 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(286): add_on_removal_request('')
+#2 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/inservis/epolicy.com.ua/www/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/inservis/epolicy.com.ua/www/wp-admin/admin-ajax.php(99): do_action('wp_ajax_removal...')
+#5 {main}
+  thrown in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+11:55:19 Fatal Error: Uncaught ArgumentCountError: Too few arguments to function Insurance_Class::render_statuses(), 1 passed in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php on line 58 and exactly 5 expected in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+Stack trace:
+#0 /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php(58): Insurance_Class->render_statuses(Array)
+#1 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(286): add_on_removal_request('')
+#2 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/inservis/epolicy.com.ua/www/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/inservis/epolicy.com.ua/www/wp-admin/admin-ajax.php(99): do_action('wp_ajax_removal...')
+#5 {main}
+  thrown in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+15:04:49 Fatal Error: Uncaught ArgumentCountError: Too few arguments to function Insurance_Class::render_statuses(), 1 passed in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php on line 58 and exactly 5 expected in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+Stack trace:
+#0 /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php(58): Insurance_Class->render_statuses(Array)
+#1 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(286): add_on_removal_request('')
+#2 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/inservis/epolicy.com.ua/www/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/inservis/epolicy.com.ua/www/wp-admin/admin-ajax.php(99): do_action('wp_ajax_removal...')
+#5 {main}
+  thrown in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+15:28:49 Fatal Error: Uncaught ArgumentCountError: Too few arguments to function Insurance_Class::render_statuses(), 1 passed in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php on line 58 and exactly 5 expected in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+Stack trace:
+#0 /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php(58): Insurance_Class->render_statuses(Array)
+#1 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(286): add_on_removal_request('')
+#2 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/inservis/epolicy.com.ua/www/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/inservis/epolicy.com.ua/www/wp-admin/admin-ajax.php(99): do_action('wp_ajax_removal...')
+#5 {main}
+  thrown in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+15:30:30 Fatal Error: Uncaught ArgumentCountError: Too few arguments to function Insurance_Class::render_statuses(), 1 passed in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php on line 58 and exactly 5 expected in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344
+Stack trace:
+#0 /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/index.php(58): Insurance_Class->render_statuses(Array)
+#1 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(286): add_on_removal_request('')
+#2 /home/inservis/epolicy.com.ua/www/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/inservis/epolicy.com.ua/www/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/inservis/epolicy.com.ua/www/wp-admin/admin-ajax.php(99): do_action('wp_ajax_removal...')
+#5 {main}
+  thrown in /home/inservis/epolicy.com.ua/www/wp-content/wp-recall/add-on/insurance/class/insurance.php:344

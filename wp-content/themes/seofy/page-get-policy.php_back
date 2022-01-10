@@ -1,0 +1,717 @@
+<?php
+/**
+* The template for displaying all pages
+*
+* This is the template that displays all pages by default.
+* Please note that this is the WordPress construct of pages
+* and that other 'pages' on your WordPress site may use a
+* different template.
+*
+* @link https://codex.wordpress.org/Template_Hierarchy
+*
+* @package WordPress
+* @subpackage Seofy
+* @since 1.0
+* @version 1.0
+*/
+
+get_header('get-policy');
+the_post();
+
+$sb = Seofy_Theme_Helper::render_sidebars();
+$row_class = $sb['row_class'];
+$column = $sb['column'];
+?>
+<div class="wgl-container">
+
+	<form action="" method="POST">
+
+		<div class="steps">
+
+			<div class="row">
+				<div class="vc_col-lg-12">
+					<div class="step-1">
+
+						<div class="step-one-number" id="setNumber">
+							<h2>Розрахувати по номеру авто</h2>
+							<div class="step-one-number-inner">
+								<div class="title-silver">Для зареєстрованих в Україні</div>
+
+								<input type="text" class="inpt-1 car-number" placeholder="aa1234бб">
+
+								<div class="step-1-text">
+									або розрахувати<br>
+									<span class="get-calc" id="getCalc">на калькуляторі</span>
+								</div>
+
+								<button class="go-step-2" id="goStepTwo">Розрахувати вартість</button>
+							</div>
+							
+						</div>
+
+						<div class="step-one-calc" id="setCalc">
+
+							<h3>Калькулятор</h3>
+							<label>Тип транспортного засобу</label>
+
+							<div class="dd-list-wrapper">
+								<input class="dd-hide-filed" type="text" readonly="readonly">
+								<div class="dd-arrow"></div>
+								<div class="dd-list-input">Оберіть...</div>
+								<ul class="dd-list type-of-car">
+                                    <li data-type-car="A1">Мотоцикл / моторолер - до 300 см3</li>
+                                    <li data-type-car="A2">Мотоцикл / моторолер - більше 300 см3</li>
+                                    <li data-type-car="B1">Легковий автомобіль - до 1600 см3</li>
+                                    <li data-type-car="B2">Легковий автомобіль - 1601 - 2000 см3</li>
+                                    <li data-type-car="B3">Легковий автомобіль - 2001 - 3000</li>
+                                    <li data-type-car="B4">Легковий автомобіль - более 3000 см3</li>
+                                    <li data-type-car="C1">Грузовий автомобіль - до 2т</li>
+                                    <li data-type-car="C2">Грузовий автомобіль - більше 2т</li>
+                                    <li data-type-car="D1">Автобус - до 20 чоловік</li>
+                                    <li data-type-car="D2">Автобус - більше 20 чоловік</li>
+                                    <li data-type-car="E">Прицеп до грузового авто</li>
+                                    <li data-type-car="F">Прицеп до легкового авто</li>
+								</ul>
+							</div><!--dd-list-wrapper end here-->
+
+<!--							<div class="parameter-two">-->
+<!--								<label>Parameter 2</label>-->
+<!--								<span class="privileges-wrapper">-->
+<!--										<input type="checkbox" id="privileges">-->
+<!--										<label for="privileges">Є пільга</label>-->
+<!--								</span>-->
+<!---->
+<!---->
+<!--								<div class="dd-list-wrapper">-->
+<!--									<input class="dd-hide-filed" type="text" readonly="readonly">-->
+<!--									<div class="dd-arrow"></div>-->
+<!--									<div class="dd-list-input">Value 1</div>-->
+<!--									<ul class="dd-list">-->
+<!--										<li>Value 1</li>-->
+<!--										<li>Value 2</li>-->
+<!--										<li>Value 3</li>-->
+<!--										<li>Value 4</li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+
+							<div class="parameter-three">
+								<label>Реєстрація авто</label>
+								<span class="privileges-wrapper">
+										<input type="checkbox" id="foreign">
+										<label for="foreign">Іноземна</label>
+								</span>
+
+								<input type="text" class="inpt-2 cities" placeholder="Введіть місто реєстрації">
+							</div>
+
+                            <!-- // KUTSENKO -->
+                            <div class="parameter-four">
+                                <label>Тип реєстрації авто</label>
+                                <span class="privileges-wrapper">
+                                            <input type="checkbox" id="rebate">
+                                            <label for="rebate">Є пільга&nbsp;&nbsp;</label>
+                                    </span>
+
+                                <div class="dd-list-wrapper">
+                                    <input class="dd-hide-filed" type="text" readonly="readonly">
+                                    <div class="dd-arrow"></div>
+                                    <div class="dd-list-input">Оберіть...</div>
+                                    <ul class="dd-list type-of-registration">
+                                        <li data-type-reg="PERMANENT_WITHOUT_OTK">Постійна реєстрація (без ОТК)</li>
+                                        <li data-type-reg="PERMANENT_WITH_OTK">Постійна реєстрація (з ОТК)</li>
+                                        <li data-type-reg="NOT_REGISTERED">Без реєстрації</li>
+                                        <li data-type-reg="TEMPORARY">Тимчасова реєстрація</li>
+                                        <li data-type-reg="TEMPORARY_ENTRANCE">Тимчасовий в'їзд</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+<!--                            <div class="parameter-five">-->
+<!--                                <label>Франшиза</label>-->
+<!---->
+<!--                                <div class="dd-list-wrapper">-->
+<!--                                    <input class="dd-hide-filed" type="text" readonly="readonly">-->
+<!--                                    <div class="dd-arrow"></div>-->
+<!--                                    <div class="dd-list-input">Оберіть...</div>-->
+<!--                                    <ul class="dd-list type-of-franchise">-->
+<!--                                        <li data-type-franchise="0">0 грн</li>-->
+<!--                                        <li data-type-franchise="1000">1000 грн</li>-->
+<!--                                        <li data-type-franchise="2000">2000 грн</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <!-- // KUTSENKO -->
+
+
+							<button class="btn-1" id="goStepThreeCalc">Порівняти ціни</button>
+
+							<span class="go-back" id="goToNumber">Повернутись назад</span>
+
+						</div>
+					</div><!--step-1 end here-->
+
+
+					<div class="step-2">
+
+						<form method="POST">
+							<div class="row">
+<!--								<div class="vc_col-lg-2">-->
+<!--									<img src="--><?php //echo bloginfo('template_url'); ?><!--/img/demo/toyota-logo-small.png" alt="">-->
+<!--								</div>-->
+								<div class="vc_col-lg-6">
+									<div class="step-2-title">Автомобіль</div>
+									<div class="step-2-text car"></div>
+								</div>
+								<div class="vc_col-lg-6">
+									<div class="step-2-title">Номер авто</div>
+									<div class="step-2-text car-number"></div>
+								</div>
+							</div>
+							<div class="row">
+<!--								<div class="vc_col-lg-2"></div>-->
+								<div class="vc_col-lg-6">
+									<div class="step-2-title">VIN</div>
+									<div class="step-2-text vin"></div>
+								</div>
+								<div class="vc_col-lg-6">
+									<div class="step-2-title">Категорія</div>
+									<div class="step-2-text car-cat"></div>
+								</div>
+							</div>
+
+							<div class="step-2-inner">
+
+								<label>Реєстрація авто</label>
+								<input class="inpt-3" id="get-cities" type="text" placeholder="Введіть місто реєстрації">
+<!--								<span class="such-as"><span>Київ</span>, <span>Одеса</span>, <span>Харків</span></span>-->
+
+								<button class="btn-2" id="goStepThree">Далі</button>
+
+								<span class="go-back" id="goBack">Повернутись назад</span>
+							</div>
+						</form>    
+					</div><!--step-2 end here-->
+
+
+					<div class="step-3">
+						<div class="row step-3-header">
+<!--							<div class="vc_col-lg-1">-->
+<!--								<img src="--><?php //echo bloginfo('template_url'); ?><!--/img/demo/toyota-logo-small.png" alt="">-->
+<!--							</div>-->
+<!--							<div class="vc_col-lg-3">-->
+<!--								<div class="step-3-title">Автомобіль</div>-->
+<!--								<div class="step-3-text car"></div>-->
+<!--							</div>-->
+<!--							<div class="vc_col-lg-2">-->
+<!--								<div class="step-3-title">Номер авто</div>-->
+<!--								<div class="step-3-text car-number"></div>-->
+<!--							</div>-->
+							<div class="vc_col-lg-4">
+								<div class="step-3-title">Категорія</div>
+								<div class="step-3-text car-cat"></div>
+							</div>
+							<div class="vc_col-lg-4">
+								<div class="step-3-title">Реєстрація</div>
+								<div class="step-3-text adress"></div>
+							</div>
+							<div class="vc_col-lg-1">
+								<div class="step-3-title">Пільги</div>
+								<div class="step-3-text contr-agent"></div>
+							</div>
+							<div class="vc_col-lg-1">
+								<div class="step-3-title">Термін дії</div>
+								<div class="step-3-text">12 місяців</div>
+							</div>
+							<div class="vc_col-lg-2">
+								<button class="btn-change" id="goBackFromOsagis">Змінити</button>
+							</div>
+						</div>
+<!--						<div class="row">-->
+<!--							<div class="vc_col-lg-12 step-3-message message-danger">-->
+<!--								Під номером АА1234ББ не знайдено поліс ОСАГО. Штраф за керування без поліса ОСАГО <b>до 850 грн</b>-->
+<!--							</div>-->
+<!--						</div>-->
+
+						<div class="row step-3-results-header">
+							<div class="vc_col-lg-12">
+								<div class="step-3-matches">Знайдено співпадінь - <span></span></div>
+							</div>
+<!--							<div class="vc_col-xs-12 vc_col-lg-4">-->
+<!--								<div class="step-3-sort">-->
+<!--									<span class="step-3-sort-title">Сортування:</span>-->
+<!--									<span class="step-3-sort-select">-->
+<!--										<select>-->
+<!--											<option value="price">Ціна</option>-->
+<!--											<option value="rating">Рейтинг</option>-->
+<!--											<option value="franchise">Франшиза</option>-->
+<!--											<option value="policy" selected="selected">Електронний поліс</option>-->
+<!--										</select>-->
+<!--										<i class="fa fa-angle-down"></i>-->
+<!--									</span>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="vc_col-xs-6 vc_col-lg-1 show-tile" id="showTile"><i class="fa fa-th" aria-hidden="true"></i></div>-->
+<!--							<div class="vc_col-xs-6 vc_col-lg-1 show-list active" id="showList"><i id="showList" class="fa fa-list" aria-hidden="true"></i></div>-->
+						</div>
+
+						<div class="step-3-results-list owl-carousel owl-theme">
+<!--							<div class="row step-3-results-item">-->
+<!--								<div class="vc_col-md-12">-->
+<!--									<div class="row step-3-results-item-top">-->
+<!--										<div class="vc_col-sm-4 vc_col-md-2">-->
+<!--											<div class="company-logo">-->
+<!--												<a href="#"><img src="--><?php //echo bloginfo('template_url'); ?><!--/img/demo/1.png" alt=""></a>-->
+<!--											</div>-->
+<!---->
+<!--											<div class="company-title">АСКА</div>-->
+<!---->
+<!--											<div class="policy-raiting">		-->
+<!--												<span class="fa fa-star checked"></span>-->
+<!--												<span class="fa fa-star checked"></span>-->
+<!--												<span class="fa fa-star checked"></span>-->
+<!--												<span class="fa fa-star"></span>-->
+<!--												<span class="fa fa-star"></span>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="vc_col-sm-4 vc_col-md-2">-->
+<!--											<div class="step-3-price">-->
+<!--												1600 <span>грн</span>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="vc_col-sm-4 vc_col-md-2">-->
+<!--											<div class="step-3-franchise">-->
+<!--												<div class="step-3-results-item-title">Франшиза</div>-->
+<!--												<p><input type="radio" name="var1" id="fr-1"><label for="fr-1">0 грн</label></p>-->
+<!--												<p><input type="radio" name="var1" id="fr-2"><label for="fr-2">1000 грн</label></p>-->
+<!--												<p><input type="radio" name="var1" id="fr-3"><label for="fr-3">2000 грн</label></p>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="vc_col-md-4 policy-privilege">-->
+<!--											<div class="step-3-results-item-title">Переваги</div>-->
+<!--											<p>Лидер по сроку урегулирования убытков</p>-->
+<!--										</div>-->
+<!--										<div class="vc_col-md-2">-->
+<!--											<button class="btn-get-it">Придбати</button>-->
+<!--											<span class="electro-policy">Електронний поліс</span>-->
+<!--										</div>-->
+<!--									</div>-->
+<!---->
+<!---->
+<!--									<div class="step-3-results-item-bottom">-->
+<!--										<div class="row">-->
+<!--											<div class="vc_col-md-8">-->
+<!--												<div class="step-3-policy-title">Электронный полис от "АСКА" с моментальной доставкой на e-mail</div>-->
+<!--												<div class="row">-->
+<!--													<div class="vc_col-md-6">-->
+<!--														<div class="step-3-policy-title">Лимиты ответственности:</div>-->
+<!--														<ul>-->
+<!--															<li>100 000 грн. по имуществу</li>-->
+<!--															<li>200 000 грн. по жизни и здоровью</li>-->
+<!--														</ul>-->
+<!--													</div>-->
+<!--													<div class="vc_col-md-6">-->
+<!--														<div class="step-3-policy-title">Особенности:</div>-->
+<!--														<ul>-->
+<!--															<li>Участник соглашения о Прямом урегулировании</li>-->
+<!--															<li>Информационная поддержка клиентов 24/7</li>-->
+<!--															<li>Более 50 представительств в разных городах</li>-->
+<!--														</ul>-->
+<!--													</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="vc_col-md-4">-->
+<!--												<div class="step-3-policy-info">-->
+<!--													<div class="step-3-policy-info-header">-->
+<!--														<div class="step-3-policy-title">124 дні</div>-->
+<!--														<p>Средняя скорость выплаты по ОСАГО</p>-->
+<!--													</div>-->
+<!--													<div class="step-3-policy-info-body">-->
+<!--														<div class="row">-->
+<!--															<div class="vc_col-md-12">-->
+<!--																<div class="step-3-policy-info-title">-->
+<!--																	Рейтинг <img src="--><?php //echo bloginfo('template_url'); ?><!--/img/demo/2.png" alt=""> <i class="fa fa-info" aria-hidden="true"></i>-->
+<!--																	<div class="step-3-policy-info-help">-->
+<!--																		Ежеквартальный рейтинг Моторно (транспортного) страхового бюро Украины о деятельности страховщика, качестве урегулирования страховых случаев и жалобах-->
+<!--																	</div>-->
+<!--																</div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--														<div class="step-3-rating-title">-->
+<!--															<div class="row">-->
+<!--																<div class="vc_col-xs-4">-->
+<!--																	Деятельность страховщика-->
+<!--																</div>-->
+<!--																<div class="vc_col-xs-4">Качество урегулирования убытков</div>-->
+<!--																<div class="vc_col-xs-4">Уровень жалоб</div>-->
+<!--															</div>-->
+<!--															<div class="row">-->
+<!--																<div class="vc_col-xs-4">-->
+<!--																	<span class="step-3-rating-good">Добре</span>-->
+<!--																</div>-->
+<!--																<div class="vc_col-xs-4">-->
+<!--																	<span class="step-3-rating-mean">Середній</span>-->
+<!--																</div>-->
+<!--																<div class="vc_col-xs-4">-->
+<!--																	<span class="step-3-rating-bad">Поганий</span>-->
+<!--																</div>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>-->
+<!---->
+<!--													<div class="step-3-policy-info-footer">-->
+<!--														<ul>-->
+<!--															<li>-->
+<!--																<a href="#">Образец страхового полиса</a>-->
+<!--															</li>-->
+<!--															<li><a href="#">Информация про компанию</a></li>-->
+<!--															<li><a href="#">Отзывы про СК</a> <span>99</span></li>-->
+<!--														</ul>-->
+<!--													</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="row">-->
+<!--										<div class="vc_col-md-12">-->
+<!--											<span class="step-3-results-item-more">Детальніше</span>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+
+						</div> <!--step-3-results-list end here-->
+
+					</div><!--step-3 end here-->
+
+
+
+					<div class="step-4">
+						<div class="step-4-title">
+							<h3>Оформлення полісу ОСАГО</h3>
+						</div>
+
+						<div class="step-4-header">
+							<div class="row flex-box">
+<!--								<div class="vc_col-lg-1">-->
+<!--									<div class="step-4-logo">-->
+<!--										<img src="--><?php //echo bloginfo('template_url'); ?><!--/img/demo/toyota-logo-small.png" alt="">-->
+<!--									</div>-->
+<!--								</div>-->
+								<div class="vc_col-lg-12">
+									<div>
+										<span class="policy-check-title">Вартість поліса:</span>
+										<span class="policy-check-price"></span>
+										<span class="policy-check-currency">грн</span>
+										<span class="policy-check-type"><span class="electro-policy">Електронний поліс</span></span>
+									</div>
+									<div class="policy-check-period">
+										<span class="policy-check-period-title">Період дії: </span>
+
+                                        <?php
+                                        $dateFrom = date('Y-m-d');
+                                        $dateTo = date('Y-m-d', strtotime('+1 year -1 day'));
+                                        ?>
+
+										<input type="text" class="inpt-4" id="policyCheckPeriodStart" value="<?php echo $dateFrom; ?>" readonly=""> -
+
+										<input type="text" class="inpt-4 inpt-silver" id="policyCheckPeriodEnd" value="<?php echo $dateTo; ?>" readonly=""> <b>(12 місяців)</b>
+			
+
+									</div>
+								</div>
+<!--								<div class="vc_col-lg-2">-->
+<!--									<div class="step-4-policy-parameter" id="getParameter">-->
+<!--										Параметры страхования <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+<!--									</div>-->
+<!--								</div>-->
+							</div>
+<!--							<div class="step-4-header-bottom">-->
+<!--								<div class="row">-->
+<!--									<div class="vc_col-lg-3">-->
+<!--										<div>Тип транспортного средства:</div>-->
+<!--										<b>Легковой автомобиль</b>-->
+<!--									</div>-->
+<!--									<div class="vc_col-lg-2">-->
+<!--										<div>Объем</div>-->
+<!--										<b>до 1600 см3</b>-->
+<!--									</div>-->
+<!--									<div class="vc_col-lg-2">-->
+<!--										<div>Регистрация:</div>-->
+<!--										<b>Киев</b>-->
+<!--									</div>-->
+<!--									<div class="vc_col-lg-1">-->
+<!--										<div>Льготы:</div>-->
+<!--										<b>Нет</b>-->
+<!--									</div>-->
+<!--									<div class="vc_col-lg-2">-->
+<!--										<div>Срок действия:</div>-->
+<!--										<b>12 месяцев</b>-->
+<!--									</div>-->
+<!--									<div class="vc_col-lg-2">-->
+<!--										<a class="btn-change-1" href="#">Изменить</a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+							
+						</div>
+
+						<div class="step-4-body-top">
+							<div class="row">
+<!--								<div class="vc_col-lg-9">-->
+<!--									<div class="user-photo">-->
+<!--										<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MC4wNjIiIGhlaWdodD0iODkuODc1IiB2aWV3Qm94PSIwIDAgOTAuMDYyIDg5Ljg3NSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogI2RmZTBlMTsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGlkPSJwZXJzb24uc3ZnIiBjbGFzcz0iY2xzLTEiIGQ9Ik01NjUuMDI3LDY1NS41NTFhNDQuOSw0NC45LDAsMCwxLTE0Ljg1MiwzMy40MTVjLTUuOTcxLDUuMzgzLTEzLjQ0MSw5LjU2Ni0yMS42NTEsMTAuNTYtMi43NjEsMS01LjYwOS44NTgtOC41MjUsMC44NTgtMi44NzUsMC01LjY4NC4xOTUtOC40MDktLjhoLTAuMDM4Yy04LjUtMS0xNi4xNTgtNS41MjItMjIuMjQzLTExLjJBNDQuOTkzLDQ0Ljk5MywwLDEsMSw1NjUuMDI3LDY1NS41NTFaTTUyNC44LDY5OC4yMTVjLTIuMTI2LTUuNzc2LTUuNDUyLTE0LjczOC01LjQ1Mi0xNC43MzhsMi4yMjgtNC45MTNINTE3LjEzbDIuMjIsNC45MTNzLTMuMTQ0LDguODMxLTUuMjcyLDE0LjY2NWE0My45NzgsNDMuOTc4LDAsMCwwLDUuOTIxLjM5MkE0My4yNjIsNDMuMjYyLDAsMCwwLDUyNC44LDY5OC4yMTVabTM4LjIyNi00Mi42NjRhNDMuMDI5LDQzLjAyOSwwLDEsMC03MS45NjcsMzEuODQzYzAuMDQtLjAyMS4wNzctMC4wNDQsMC4xMTctMC4wNjYsMS43OC0uOTU3LDMuNTQ3LTEuOTMzLDUuMzY3LTIuODA2LDEuNzY2LS44MzcsMy41OTItMS41NjUsNS40LTIuMzIyLDEuNy0uNzEyLDMuNDE4LTEuMzkxLDUuMS0yLjExOWExLjQ4MywxLjQ4MywwLDAsMCwuNy0wLjczNWMwLjM3OC0uOTQyLjctMS45MTUsMC45OTMtMi44ODgsMC4yMjktLjc0My4zNzQtMS40NzUsMS4zMjQtMS42NjZhMS4wNTIsMS4wNTIsMCwwLDAsLjU2NC0wLjc0MWMwLjE5NC0xLjQxOC4zNDEtMi44NDcsMC40NC00LjI3YTEuNDE1LDEuNDE1LDAsMCwwLS4zMzYtMC45MjksOS4xMzcsOS4xMzcsMCwwLDEtMi4yMzEtNC44NjgsMjMuNDksMjMuNDksMCwwLDAtLjkzMS0yLjdjLTAuMzU5LTEuMjI0LS42NTYtMi40NzItMC45MzItMy43MTctMC4xLS40NTEtMC4wNDEtMC45MzItMC4xMjEtMS4zOTNhMS4wNTgsMS4wNTgsMCwwLDEsLjcxOS0xLjQ0OCwxLjE5LDEuMTksMCwwLDAsLjQxNi0wLjkyOGMwLjA0My0xLjk4Ny4wMTUtMS41LDAuMDI1LTMuNSwwLjAxLTEuMjE4LDAtMi40NDUuMDg2LTMuNjcxLDAuMTc0LTIuMzMsMS41NDQtMy45NzYsMy4yNTctNS4zOWEyMC40LDIwLjQsMCwwLDEsOC42MDYtMy43NjhjMS42MTgtLjM3OSwzLjI3NS0wLjYxMyw0LjkyNy0wLjg4YTkuMjExLDkuMjExLDAsMCwxLDEuMzQsMGMwLjA3NSwwLjExMS4xNSwwLjIyNCwwLjIyNywwLjMzOWE3LjczLDcuNzMsMCwwLDAtMS4wMjYuNzU5LDAuOTkyLDAuOTkyLDAsMCwwLC4xMDcsMS43NDVjMS40OTIsMS4yNTgsMi45ODIsMi41MjEsNC40MzUsMy44MjRhNS41MzYsNS41MzYsMCwwLDEsMS43Nyw0LjMzYzAsMi45LDAsMy4zMTksMCw2LjIyMWExLjIsMS4yLDAsMCwwLC42OTEsMS40NCwwLjY4OSwwLjY4OSwwLDAsMSwuMzA2LjU2OGMtMC4xMjgsMS40ODQtLjI4NiwyLjk1OS0wLjQ0Miw0LjQ0OGEwLjMwOSwwLjMwOSwwLDAsMS0uMDQ4LjE2MmMtMS4zMzgsMS45NS0xLjUsNC4zMzktMi40NTcsNi40MjZhMS4wMzYsMS4wMzYsMCwwLDEtLjExNi4yMzZjLTEuNzczLDIuMDgyLTEuMjE2LDQuNTg2LTEuMjYsNi45NzJhMC45LDAuOSwwLDAsMCwuMzc0LjcwOSwyLjEyMiwyLjEyMiwwLDAsMSwxLjA5MSwxLjYsMjYuNzYyLDI2Ljc2MiwwLDAsMCwxLjA3MywzLjA0NiwyLjAwOCwyLjAwOCwwLDAsMCwxLjA1Ny44MiwxNjIuOSwxNjIuOSwwLDAsMSwxNi4wMTMsNi45MzVjMC4zMDYsMC4xNTkuNTc0LDAuMzMsMC44NTUsMC41MDdBNDMuMDQ1LDQzLjA0NSwwLDAsMCw1NjMuMDI4LDY1NS41NTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDc0Ljk2OSAtNjEwLjUzMSkiLz4KPC9zdmc+Cg==" alt="">-->
+<!--									</div>-->
+<!--									<div class="hello-user">-->
+<!--										<div class="title-1">Здравствуйте, Штанько Александр!</div>-->
+<!--										<p>Вы собираетесь оформить электронный страховой полис</p>-->
+<!--									</div>-->
+<!--								</div>-->
+								<div class="vc_col-lg-12">
+									<div class="title-1">
+										Введіть e-mail
+									</div>
+									<input class="inpt-5" type="text" placeholder="E-mail">
+
+									<div class="bg-yellow email-send-text">На цей e-mail буде відправлено електронний поліс</div>
+								</div>
+							</div>
+						</div><!--step-4-body-top end here-->
+
+
+						<div class="step-4-body">
+							<div class="user-personal-data">
+								<div class="row user-profile-line flex-box">
+									<div class="vc_col-xs-12 vc_col-lg-12">
+										<div class="title-1"><i class="fa fa-user-o" aria-hidden="true"></i> Особисті дані</div>
+									</div>
+<!--									<div class="vc_col-xs-12 vc_col-sm-6 vc_col-lg-4 radio-btn-wrapper">-->
+<!--										<input type="radio" id="newUser" name="new-insurer" checked="checked" class="select-radio"><label for="newUser">Новый страхователь</label>-->
+<!--									</div>-->
+<!--									<div class="vc_col-xs-12 vc_col-sm-6 vc_col-lg-4">-->
+<!--										<div class="select-wrapper">-->
+<!--											-->
+<!--											<input type="radio" id="userCurrent" name="new-insurer">-->
+<!--											<label for="userCurrent"></label>-->
+<!--											<select name="" id="userLIst">-->
+<!--												<option value="0" selected="selected">Выбрать из сохраненных</option>-->
+<!--												<option value="1">Иванов Иван Иванович</option>-->
+<!--												<option value="2">Петров Иван Иванович</option>-->
+<!--												-->
+<!--											</select>-->
+<!---->
+<!--											<div class="select-wrapper-list">-->
+<!--												2-->
+<!--											</div>										-->
+<!--										</div>-->
+<!--										-->
+<!--									</div>-->
+								</div>
+
+								<div class="row user-profile-line-1">
+									<div class="vc_col-lg-4">
+										<label for="user-surname" class="label-1">Прізвище</label>
+										<input type="text" class="inpt-5" id="user-surname">
+									</div>
+									<div class="vc_col-lg-4">
+										<label for="user-name" class="label-1">Ім'я</label>
+										<input type="text" class="inpt-5" id="user-name">
+									</div>
+									<div class="vc_col-lg-4">
+										<label for="user-name-2" class="label-1">По-батькові</label>
+										<input type="text" class="inpt-5" id="user-name-2">
+									</div>
+								</div>
+
+								<div class="row user-profile-line-1">
+									<div class="vc_col-lg-4">
+										<label for="user-date" class="label-1">Дата народження</label>
+										<input type="text" class="inpt-5" id="user-date">
+									</div>
+									<div class="vc_col-lg-4">
+										<label for="user-inn" class="label-1">ІНН</label>
+										<input type="text" class="inpt-5" id="user-inn">
+									</div>
+									<div class="vc_col-lg-4">
+										<label for="user-phone" class="label-1">Мобільний</label>
+										<input type="text" class="inpt-5" id="user-phone">
+									</div>
+								</div>
+							</div><!--user-personal-data end here-->
+
+							<div class="user-document user-profile-line">
+								<div class="row flex-box">
+									<div class="vc_col-lg-4">
+										<div class="title-1">
+											<i class="fa fa-file-text-o" aria-hidden="true"></i>
+											Документ <span>(паспорт чи права)</span>
+										</div>
+									</div>
+									<div class="vc_col-lg-4 radio-btn-wrapper">
+										<input type="radio" id="user-passport" name="user-document" checked="checked"> <label for="user-passport">Паспорт</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" id="user-rights" name="user-document"> <label for="user-rights">Права</label>
+									</div>
+									<div class="vc_col-lg-4"></div>
+								</div>
+
+								<div class="row user-profile-line-1">
+									<div class="vc_col-lg-2">
+										<label>Серія і номер</label>
+										<div class="row">
+											<div class="vc_col-lg-6">
+												<input type="text" class="inpt-5" placeholder="">
+											</div>
+											<div class="vc_col-lg-6">
+												<input type="text" class="inpt-5" placeholder="">
+											</div>
+										</div>
+									</div>
+									<div class="vc_col-lg-8">
+										<label>Ким виданий</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-2">
+										<label>Коли виданий</label>
+										<input type="text" class="inpt-5" placeholder="дд.мм.гггг">
+									</div>
+								</div>
+							</div><!--user-document end here-->
+
+							<div class="user-location user-profile-line">
+								<div class="row">
+									<div class="vc_col-lg-12">
+										<div class="title-1">
+											<i class="fa fa-map-marker" aria-hidden="true"></i> Адреса
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="vc_col-lg-4">
+										<label class="label-1">Назва населеного пункту</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-4">
+										<label class="label-1">Назва вулиці</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-2">
+										<label class="label-1">№ Будинку</label>
+										<input type="text" class="inpt-5">
+									</div>
+									<div class="vc_col-lg-2">
+										<label class="label-1">№ Квартири</label>
+										<input type="text" class="inpt-5">
+									</div>
+								</div>
+							</div><!--user-location end here-->
+
+							<div class="user-transport user-profile-line">
+								<div class="row flex-box">
+									<div class="vc_col-sm-12 vc_col-lg-12">
+										<div class="title-1">
+											<i class="fa fa-car" aria-hidden="true"></i> Транспортний засіб
+										</div>
+									</div>
+<!--									<div class="vc_col-sm-6 vc_col-lg-4 radio-btn-wrapper">-->
+<!--										<input type="radio" id="newTransport" name="user-transport" checked="checked"><label for="newTransport">Новое транспортное средство</label>-->
+<!--									</div>-->
+<!--									<div class="vc_col-sm-6 vc_col-lg-4">-->
+<!---->
+<!--										<div class="select-wrapper">-->
+<!--											-->
+<!--											<input type="radio" id="userCurrentTransport" name="user-transport">-->
+<!--											<label for="userCurrentTransport"></label>-->
+<!--											<select name="" id="userLIst">-->
+<!--												<option value="0" selected="selected">Выбрать из сохраненных</option>-->
+<!--												<option value="1">1</option>-->
+<!--												<option value="2">2</option>-->
+<!--												-->
+<!--											</select>-->
+<!---->
+<!--											<div class="select-wrapper-list">-->
+<!--												2-->
+<!--											</div>										-->
+<!--										</div>-->
+<!--										-->
+<!--									</div>-->
+								</div>
+								<div class="row">
+									<div class="vc_col-lg-3">
+										<label class="label-1">Марка </label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-2">
+										<label class="label-1">Модель </label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-3">
+										<label class="label-1">№ шасси</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-2">
+										<label class="label-1">Гос. номер</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+									<div class="vc_col-lg-2">
+										<label class="label-1">Рік випуску</label>
+										<input type="text" class="inpt-5" placeholder="">
+									</div>
+								</div>
+							</div><!--user-transport end here-->
+
+
+
+
+						</div><!--step-4-body end here-->
+
+						<div class="step-4-footer user-profile-line">
+							<div class="step-4-footer-top">
+								<div class="row">
+									<div class="vc_col-lg-12">
+										<input type="checkbox" id="agree" checked="checked"><label for="agree">Я приймаю умови <a href="#">договору публічної оферти</a>, підтверджую достовірність всіх введених даних.</label>
+									</div>
+								</div>
+							</div>
+							<div class="step-4-footer-bottom">
+								<div class="row">
+<!--									<div class="vc_col-lg-10">-->
+<!--										<div class="title-2">Вартість поліса: <span class="step-4-footer-price"><span>грн</span></span></div>-->
+<!--										<p>Кнопка веде на сторінку оплати</p>-->
+<!--									</div>-->
+									<div class="vc_col-lg-12">
+										<input type="submit" class="btn-get-it" value="Сплатити">
+									</div>
+								</div>
+							</div>
+						</div><!--step-4-footer end here-->
+
+					<!-- </div> -->
+
+				</div><!--step-4 end here-->
+
+			</div>
+		</div>
+
+	</div><!--steps end here-->
+
+</form>
+
+
+<div class="row <?php echo apply_filters('seofy_row_class', $row_class); ?>">
+	<div id='main-content' class="vc_col-lg-<?php echo apply_filters('seofy_column_class', $column); ?>">
+		<?php
+		the_content(esc_html__('Read more!', 'seofy'));
+		wp_link_pages(array('before' => '<div class="page-link">' . esc_html__('Pages', 'seofy') . ': ', 'after' => '</div>'));
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+	endif; ?>
+</div>
+<?php
+echo (isset($sb['content']) && !empty($sb['content']) ) ? $sb['content'] : '';
+?>           
+</div>
+</div>
+<?php
+get_footer(); 
+
+?>

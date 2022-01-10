@@ -1,0 +1,93 @@
+/* #lk-menu.rcl-menu span a{
+    padding: 5px 2px !important;
+}
+#lk-menu a span{
+    padding: 0 5px 0 2px !important;
+} */
+/* .horizontal-menu #lk-menu{
+    width: calc(105% - 0px);
+} */
+
+.add-on-insurance-rate-list{}
+
+.add-on-insurance-rate-list td{
+    vertical-align: middle;
+}
+
+.add-on-insurance-rate-list tr td .more-data{
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.add-on-insurance-filetr-wrapper select{
+    display: inline;
+}
+
+.rcl-content td button.more-data + a.get-order-excell{
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #ffffff !important;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+}
+
+/*Pagination*/
+
+.add-on-insurance-pagination-btn{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffc600, #ff4200) !important;
+    transition: all .2s;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.add-on-insurance-pagination-btn:hover{
+    background: linear-gradient(90deg, #ff4200, #ffc600) !important;
+}
+
+.add-on-insurance-pagination-inpt{
+    display: inline-block !important;
+    width: 70px !important;
+    text-align: center;
+}
+
+.add-on-pagination-orders-total{
+    margin-right: 10px;
+}
+
+
+
+/*Status*/
+.add-on-removal-request-wrapper{
+    padding: 25px 0;
+}
+.add-on-modal-title{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.lbl-1{
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+}
+.txt-area-1{
+    width: 100%;
+    height: 120px;
+}
+.box-center{
+    margin: 25px auto;
+    display: block !important;
+}

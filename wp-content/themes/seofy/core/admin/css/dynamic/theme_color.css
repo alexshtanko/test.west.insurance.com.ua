@@ -1,0 +1,314 @@
+/* ==================== ##Color Styles ==================== */
+
+button,
+a:hover .wgl-icon,
+button:focus, button:active,
+h3#reply-title a:hover,
+input[type='submit']:focus, input[type='submit']:active,
+input[type="submit"]:hover,
+.author-info_social-wrapper,
+.button-read-more,
+.button-read-more:hover,
+.blog-post_title i,
+.blog-post_link>.link_post:hover,
+.blog-post.format-standard.link .blog-post_title:before,
+.blog-post_cats span,
+.blog-post_title a:hover,
+.blog-posts .meta-wrapper a:hover,
+.share_link span.fa:hover, 
+.share_post span.fa:hover,
+.calendar_wrap thead,
+.copyright a:hover,
+.comment_author_says a:hover,
+.dropcap,
+.meta-wrapper > span.author_post a,
+.blog-post_wrapper .share_post-container:hover > a, 
+.seofy_submit_wrapper:hover > i,
+.seofy_custom_button i,
+.seofy_custom_text a,
+.seofy_module_button a:hover,
+.seofy_module_carousel .slick-prev:hover:after,
+.seofy_module_carousel .slick-next:hover:after,
+.seofy_module_counter .counter_icon,
+.seofy_module_counter .counter_value_wrap,
+.seofy_module_counter .counter_value_wrap .counter_value_suffix,
+.seofy_module_demo_item .di_title-wrap .di_subtitle,
+.seofy_module_demo_item .di_title_wrap a:hover .di_title,
+.seofy_module_double_headings .heading_subtitle,
+.seofy_module_social .soc_icon:hover,
+.seofy_module_testimonials .testimonials_quote:before,
+.seofy_module_infobox .infobox_icon,
+.seofy_twitter a,
+.header_search .header_search-button > i:hover,
+.header_search-field .search-form:after,
+.next-link_wrapper .image_next.no_image:before,
+.next-link_wrapper .image_next:after,
+.prev-link_wrapper .image_prev:after,
+.prev-link_wrapper .image_prev.no_image:before,
+.single_team_page .team-info_wrapper .team-department span,
+.single_team_page .team-single_speaches-info .speech-info_desc span,
+.header_search .header_search-button > i:hover,
+.load_more_item:hover,
+.load_more_works:hover,
+.mc_form_inside #mc_signup_submit:hover,
+.meta-wrapper a:hover,
+.primary-nav ul li ul .menu-item.current-menu-item > a,
+.primary-nav ul ul li.menu-item.current-menu-ancestor > a, 
+.primary-nav ul ul li.menu-item.current-menu-item > a,
+.primary-nav ul li ul .menu-item:hover > a,
+.primary-nav ul li ul .menu-item.back:hover > a,
+.primary-nav ul li ul .menu-item.back:hover:before,
+.vc_wp_custommenu .menu .menu-item.current-menu-item > a,
+.single_team_page .team-info_wrapper .team-info_item a:hover,
+.single-member-page .member-icon:hover,
+.single-member-page .team-link:hover,
+.single_team_page .team-single_speaches-info .speech-info_day,
+.team-icons .member-icon:hover,
+.under_image .wgl_portfolio_item-meta .post_cats,
+.vc_wp_custommenu .menu .menu-item.current-menu-ancestor > a,
+.wgl_timetabs .timetabs_headings .wgl_tab.active .tab_subtitle,
+.wgl_timetabs .timetabs_headings .wgl_tab:hover .tab_subtitle,
+.wgl_portfolio_category-wrapper a:hover,
+.wgl-theme-header .wrapper .seofy_module_button a:hover,
+.wgl_module_team .team-item_info .team-item_titles .team-title:hover,
+.wgl-icon:hover,
+.wgl-theme-color,
+.wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-accordion .vc_tta-panels-container .vc_tta-panel .vc_tta-panel-heading .vc_tta-panel-title:hover,
+.wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-accordion .vc_tta-panels-container .vc_tta-panel .vc_tta-panel-heading .vc_tta-panel-title.vc_tta-controls-icon-position-right .vc_tta-controls-icon,
+.wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-accordion .vc_tta-panels-container .vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title > a span,
+.wpb-js-composer .wgl-container .vc_row .vc_toggle .vc_toggle_title:hover,
+.wpb-js-composer .wgl-container .vc_row .vc_toggle .vc_toggle_title:hover h4,
+.wpb-js-composer .wgl-container .vc_row .vc_toggle .vc_toggle_title .vc_toggle_icon,
+.wpb-js-composer .wgl-container .vc_row .vc_toggle.vc_toggle_active .vc_toggle_title h4,
+.wpb-js-composer .vc_row .vc_tta.vc_general .vc_active .vc_tta-panel-title > a:before,
+.wpml-ls a:hover,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language a:hover,
+.header_search .header_search-button > i:hover,
+.meta-wrapper span:after,
+.meta-wrapper > span:before,
+.wgl_portfolio_item-meta .post_cats a:hover,
+.under_image .wgl_portfolio_item-title .title:hover,
+.seofy_module_services_3 .services_icon_wrapper .services_icon,
+.seofy_module_circuit_services .services_subtitle,
+.seofy_module_services_4 .services_icon,
+.seofy_module_services_4:hover .services_number{
+	color: $theme_color;
+}
+
+.hover_links a:hover,
+header .header-link:hover{
+	color: $theme_color !important;
+}
+
+/* widget styles */
+body .widget_nav_menu .current-menu-ancestor > a,
+body .widget_nav_menu .current-menu-item > a,
+body .widget_recent_entries  ul li .post-date,
+body .widget_rss ul li .rss-date,
+.seofy_banner-widget .banner-widget_button:hover,
+.recent-posts-widget .meta-wrapper a,
+.widget.widget_archive ul li a:hover,
+.widget.widget_archive ul li a:hover,
+.widget.widget_categories ul li a:hover,
+.widget.widget_categories ul li a:hover,
+.widget.widget_recent_comments ul li a,
+.widget.widget_recent_comments ul li a,
+.widget.widget_recent_entries ul li:before,
+.widget.widget_recent_entries ul li:before,
+.widget.widget_pages ul li a:hover,
+.widget.widget_pages ul li a:hover,
+.widget.widget_meta ul li a:hover,
+.widget.widget_meta ul li a:hover,
+.widget.seofy_widget.seofy_banner-widget .banner-widget_button:hover,
+.widget.seofy_widget.seofy_banner-widget .banner-widget_button:hover,
+.widget.widget_recent_comments ul li a:hover,
+.widget.widget_recent_comments ul li a:hover,
+.widget.widget_recent_entries ul li a:hover,
+.widget.widget_recent_entries ul li a:hover,
+.widget.widget_nav_menu ul li a:hover,
+.widget.widget_nav_menu ul li a:hover,
+.widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover,
+.widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover,
+.recent-posts-widget .meta-wrapper a{
+	color: $theme_color;
+}
+/* end widget styles */	
+
+/* ==================== ##End Color Styles ==================== */
+
+/* ==================== ##Background Styles ==================== */
+.primary-nav ul li ul li:hover > a > span:before,
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu .wpml-ls-item a span:before,
+.primary-nav ul li ul li > a > span:before,
+.single_team_page .team-title:before,
+.isotope-filter a.active,
+.isotope-filter a:hover,
+.wgl-container ul.seofy_plus li:after,
+.wgl-container ul.seofy_plus li:before,
+.wgl-container ul.seofy_dash li:before,
+.seofy_module_double_headings .heading_title .heading_divider,
+.seofy_module_double_headings .heading_title .heading_divider:before, 
+.seofy_module_double_headings .heading_title .heading_divider:after{
+	background: $theme_color;
+}
+
+::selection,
+#comments .comment-reply-link:hover,
+#comments > h3:after,
+#sb_instagram .sbi_photo:before,
+#main ul.seofy_plus li:before,
+aside > .widget + .widget:before,
+button:hover,
+body .widget .widget-title .widget-title_dots,
+body .widget .widget-title .widget-title_dots:before, 
+body .widget .widget-title .widget-title_dots:after,
+input[type="submit"],
+mark,
+span.highlighter,
+.button-read-more:after,
+.blog-post_cats span a,
+.calendar_wrap caption,
+.comment-reply-title:after,
+.seofy_divider .seofy_divider_line .seofy_divider_custom .divider_line,
+.seofy_module_cats .cats_item-count,
+.seofy_module_double_headings .heading_subtitle:after,
+.seofy_module_double_headings .heading_subtitle:before,
+.seofy_module_progress_bar .progress_bar,
+.seofy_module_progress_bar .progress_label_wrap:before,
+.seofy_module_infobox.type_tile:hover:before,
+.seofy_module_social.with_bg .soc_icon,
+.seofy_module_pricing_plan .pricing_plan_wrap.highlighted .pricing_header,
+.seofy_module_title:after,
+.seofy_module_title .carousel_arrows a:hover span,
+.seofy_module_videobox .videobox_link,
+.load_more_works,
+.mc_form_inside #mc_signup_submit,
+.vc_wp_custommenu .menu .menu-item a:before,
+.primary-nav > ul > li > a > span:after,
+.primary-nav ul li ul li > a span:before,
+.primary-nav ul li ul li > a:before,
+.primary-nav > ul:not(.lavalamp) > li.current-menu-item > a > span:after,
+.primary-nav > ul:not(.lavalamp) > li.current-menu-ancestor > a  > span:after,
+.primary-nav ul li.mega-menu.mega-cat div.mega-menu-container ul.mega-menu.cats-horizontal > li.is-active > a,
+.primary-nav ul li.mega-menu-links > ul > li > a:before,
+.primary-nav ul li.menu-item.current-menu-ancestor > a > span:after,
+.primary-nav ul li.menu-item.current-menu-item > a > span:after,
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu .wpml-ls-item a:before,
+.wgl_module_title.item_title .carousel_arrows a:hover,
+.wgl_timetabs .timetabs_headings .wgl_tab.active:after,
+.seofy_banner-widget .banner-widget_button,
+.widget .calendar_wrap table td#today:before,
+.widget .calendar_wrap table td#today:before,
+.widget .calendar_wrap tbody td > a:before,
+.widget .counter_posts,
+.widget.widget_pages ul li a:before,
+.widget.widget_nav_menu ul li a:before,
+.widget_nav_menu .menu .menu-item:before,
+.widget_postshero .recent-posts-widget .post_cat a,
+.widget_categories ul li > a:before, 
+.widget_meta ul li > a:before, 
+.widget_archive ul li > a:before,
+.tagcloud a:hover{
+	background-color: $theme_color;
+}
+/* ==================== ##End Background Styles ==================== */
+
+/* ==================== ##Background and Border Styles ==================== */
+
+.seofy_module_button a{
+	border-color: $theme_color;
+	background: $theme_color;
+}
+
+.blog-post_meta-date,
+.blog-post_cats span a,
+.seofy_404_button.seofy_module_button a,
+.seofy_module_carousel.navigation_offset_element .slick-prev:hover,
+.seofy_module_carousel.navigation_offset_element .slick-next:hover,
+.cats_post a,
+.load_more_item,
+.next-link:hover,
+.prev-link:hover{
+	border-color: $theme_color;
+	background: $theme_color;
+} 
+
+/* ==================== ##End Background and Border Styles ==================== */
+
+/* ==================== ##Border Styles ==================== */
+
+#comments .comment-reply-link,
+.banner-widget_button,
+.seofy_module_button a:hover,
+.seofy_module_carousel.pagination_circle_border .slick-dots li button,
+.seofy_module_cats .seofy_module_carousel .slick-next:hover, 
+.seofy_module_cats .seofy_module_carousel .slick-prev:hover,
+.seofy_module_title .carousel_arrows a:hover span:before,
+.load_more_item:hover,
+.load_more_works{
+	border-color: $theme_color;
+}
+
+/* ==================== ##End Border Styles ==================== */
+
+/* ==================== ##Second Styles ==================== */
+.single_team_page .team-info_wrapper .team-info_svg svg,
+.single_team_page .team-single_wrapper:hover .team-info_wrapper .team-info_svg svg,
+.wgl_module_team.horiz_type .team-item_content:hover .team-info_svg svg{
+	fill: $theme_color;
+}
+
+.wgl-theme-header .header_search .header_search-field:after{
+	border-bottom-color: rgba($hex_theme_color, 0.9);
+}
+
+.theme_color_shadow{
+	box-shadow: 0px 11px 38px 0px rgba($hex_theme_color, 0.45);
+}
+/* ==================== ##End Second Styles ==================== */
+
+/* ==================== ##Theme Secondary Color Styles ==================== */
+a,
+blockquote:before,
+.dropcap,
+#main ul li:before,
+body ol > li:before,
+.blog-post_link:before,
+.blog-post_meta-categories span,
+.blog-post_quote-text:before,
+.wgl_portfolio_item-meta a, 
+.wgl_portfolio_item-meta span,
+.seofy_module_demo_item .di_label{
+	color: $second_color;
+}
+/* ==================== ##End Theme Secondary Color Styles ==================== */
+
+/* ==================== ##Theme Secondary Background Styles ==================== */
+#main ul li:before,
+.meta-wrapper span:after,
+.prev-link_wrapper .image_prev .no_image_post,
+.next-link_wrapper .image_next .no_image_post,
+.next-link_wrapper .image_next:after,
+.prev-link_wrapper .image_prev:after,
+.wgl-pagination .page .current,
+.wgl-pagination .page a:hover,
+.page-header_breadcrumbs .divider,
+.slick-dots li button{
+	background: $second_color;
+}
+
+body .widget_categories ul li .post_count, 
+body .widget_product_categories ul li .post_count, 
+body .widget_meta ul li .post_count, 
+body .widget_archive ul li .post_count{
+	background: $second_color;
+}
+/* ==================== ##End Theme Secondary Background Styles ==================== */
+
+/* ==================== ##Theme Secondary Background and Border Styles ==================== */
+.blog-post_meta-categories a{
+	background: $second_color;
+	border-color: $second_color;
+}
+/* ==================== ##End Theme Secondary Background and Border Styles ==================== */
